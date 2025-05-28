@@ -650,6 +650,23 @@ ul.slick-nav li:hover svg {
   display: inline-block;
 }
 
+/*************  Signature Fit ****************/
+.signature-fit {
+  padding: 80px 0px;
+}
+/************ Handpicked  ********************/
+.handpicked {
+  padding: 0px 0px;
+  margin: 80px auto;
+  background-image: url(../images/handpicked-2.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30%;
+  
+}
+
+
+
 /********* AT HKT CLothiers ************/
 .at-hkt-clt {
   padding: 80px 0px;
