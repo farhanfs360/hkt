@@ -21,6 +21,7 @@ h6 {
   font-family: var(--heading-font-family);
   line-height: 1.2em;
   font-optical-sizing: auto;
+  font-weight: normal;
 }
 
 h1 {
@@ -42,6 +43,9 @@ h2 span {
 
 h2 span {
   font-family: var(--heading-font-family);
+}
+h3 {
+  font-size: 36px;
 }
 
 h4 {
@@ -67,7 +71,11 @@ a {
 }
 
 .sp-40 {
-  padding: 40px 0px;
+  padding: 20px 0px;
+}
+
+.sp-20 {
+  padding: 10px 0px;
 }
 
 .pd-l-40 {
