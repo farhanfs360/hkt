@@ -717,6 +717,40 @@ text-transform: uppercase;
   font-size: 18px;
 }
 
+/*************  Reviews Carousel  ****************/
+.review-sec {
+  padding: 80px 0px;
+  background-color: #FFF
+}
+
+.review-box {
+  padding: 35px;
+  margin: 30px 10px;
+
+}
+.review-box .review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.review-box .review-content p.review-text {
+margin: 30px 0px 40px;
+font-size: 18px;
+}
+
+.review-box .review-content p.review-title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;}
+.review-box .review-content img {
+  width: 160px !important;
+}
+
+.review-sec .slick-slide.slick-current.slick-active.slick-center .review-box {
+  box-shadow: 16px 12px 24px 10px rgba(23, 47, 19, 0.1) !important;
+  transition: all 0.9s;
+}
 
 
 /*************  Finest  ****************/
