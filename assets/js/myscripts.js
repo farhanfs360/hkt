@@ -9,7 +9,7 @@ $(document).ready(function () {
     prevArrow: '<button class="hero-btn-prev">Prev</button>',
   });
 
-  $(".prds").slick({
+  $(".post-carousel").slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -48,6 +48,40 @@ $(document).ready(function () {
     ],
   });
 
+  //BLOG HOME SLIDER
+  $('.blog-slider').slick({
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    centerPadding: '160px',
+    slidesToShow: 3,
+    prevArrow: $(".prevf"),
+    nextArrow: $(".nextf"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  // END
+
   //
 
   $(document).ready(function () {
@@ -85,8 +119,7 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     autoplay: true,
-    prevArrow: $(".prevf"),
-    nextArrow: $(".nextf"),
+
   });
 
   $(window).scroll(function () {

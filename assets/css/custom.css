@@ -44,6 +44,7 @@ h2 span {
 h2 span {
   font-family: var(--heading-font-family);
 }
+
 h3 {
   font-size: 36px;
 }
@@ -81,15 +82,28 @@ a {
 .pd-l-40 {
   padding-left: 40px;
 }
+
 .pd-r-40 {
   padding-right: 40px;
 }
+
 .pd-t-40 {
   padding-top: 40px;
 }
+
 .pd-b-40 {
   padding-bottom: 40px;
 }
+
+.no-pad {
+  padding: 0px;
+}
+
+.mxw-75 {
+  max-width: 75%;
+  margin: auto;
+}
+
 body {
   outline: none;
   font-family: var(--text-font-family);
@@ -197,8 +211,7 @@ header.header ul.nav ul {
   border-radius: 0px 120px 0px 0px;
 }
 
-header.header ul.nav li {
-}
+header.header ul.nav li {}
 
 li.menu-item-has-children:after {
   content: "\f0dd";
@@ -232,8 +245,8 @@ header ul.nav li a:hover:after {
   width: 100%;
 }
 
-header.header ul.nav li:hover > ul,
-header.header ul.nav li:focus-within > ul,
+header.header ul.nav li:hover>ul,
+header.header ul.nav li:focus-within>ul,
 header.header ul.nav li ul:hover,
 header.header ul.nav li ul:focus {
   visibility: visible;
@@ -359,9 +372,9 @@ header .btn.btn-cta:hover i,
 /**** Hero banner ************/
 
 .hero-sec {
-  background-image:url(../images/htk-hero.png);
+  /*background-image: url(../images/htk-hero.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   padding: 50px 0px 50px;
   min-height: 100dvh;
   text-align: center;
@@ -375,9 +388,11 @@ header .btn.btn-cta:hover i,
   display: flex;
   align-items: center;
 }
+
 .hero-content {
   padding: 0px 50px 0px 0px;
 }
+
 .hero-content span.welcom {
   color: #FFF;
   font-size: 20px;
@@ -395,18 +410,19 @@ header .btn.btn-cta:hover i,
 
 .hero-btn {
   position: absolute;
-    bottom: 30px;
-    margin: auto;
-    left: 0;
-    right: 0;
+  bottom: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
-.hero-btn a {
-  border-bottom: 1px solid #FFF;
+.hero-btn a {  
+  background-color: transparent;
   color: #FFF;
   padding: 6px 0px;
   border-radius: 0px;
   font-size: 18px;
+  border-bottom: 1px solid #FFF;
   text-transform: uppercase;
   transition: all 0.3s;
 }
@@ -423,8 +439,7 @@ header .btn.btn-cta:hover i,
   padding: 50px 0px;
 }
 
-.wc-box-cont {
-}
+.wc-box-cont {}
 
 .wc-box-cont h3 {
   font-size: 24px;
@@ -438,6 +453,7 @@ header .btn.btn-cta:hover i,
   color: var(--color-text-black);
   font-weight: 500;
 }
+
 /* ==== POST Sections ==== */
 
 ul.slick-nav {
@@ -498,22 +514,27 @@ ul.slick-nav li:hover svg {
   background: #f0ebe3;
   padding: 80px 0px 80px;
 }
+
 .row.prds {
   padding: 30px 0px;
 }
+
 .prodcuct-box {
   position: relative;
   padding: 40px 20px 50px;
 }
+
 .explore-products .prodcuct-box img:nth-child(1) {
   border-radius: 10px;
 }
+
 .explore-products .prodcuct-box img:nth-child(2) {
   position: absolute;
   left: 110px;
   top: 90px;
   width: 165px;
 }
+
 .explore-products .prodcuct-box h3 {
   font-size: 24px;
   font-weight: bold;
@@ -525,6 +546,7 @@ ul.slick-nav li:hover svg {
   font-weight: 600;
   color: var(--color-text-black);
 }
+
 .explore-products .prodcuct-box a {
   background-color: var(--color-link-br);
   color: #fff;
@@ -554,6 +576,7 @@ ul.slick-nav li:hover svg {
 .imgs-p {
   padding: 0;
 }
+
 .slk-btns {
   display: flex;
   justify-content: end;
@@ -566,19 +589,23 @@ ul.slick-nav li:hover svg {
 .slk-btns .nextf svg {
   width: 55px;
   height: 55px;
+  background-color: #E5E5E5;
   fill: var(--color-link-br);
   border: 1px solid var(--color-link-br);
-  padding: 16px;
+  padding: 14px;
   border-radius: 50%;
   cursor: pointer;
+  stroke: #000;
   opacity: 1;
   transition: all 0.2s;
 }
+
 .slk-btns .prev:hover svg,
 .slk-btns .next:hover svg,
 .slk-btns .prevf:hover svg,
 .slk-btns .nextf:hover svg {
-  opacity: 0.6;
+  background-color: var(--color-red-hover);
+  stroke: #FFF;
 }
 
 /* ==== Our Promise ==== */
@@ -591,11 +618,13 @@ ul.slick-nav li:hover svg {
 .our-promoise .head p {
   color: #f0ebe3;
 }
+
 .promise-aside {
   max-width: 90%;
   float: right;
   margin-top: -90px;
 }
+
 .proms-pts {
   display: flex;
   align-items: center;
@@ -620,6 +649,7 @@ ul.slick-nav li:hover svg {
 .feedbk {
   padding: 60px 0px;
 }
+
 .fdbk {
   padding: 0px;
 }
@@ -650,10 +680,171 @@ ul.slick-nav li:hover svg {
   display: inline-block;
 }
 
+/*************** From the first fitting to final *********************/
+.first-fitting {
+  padding: 80px 0px;
+  background-color: #000;
+}
+
+.post-carousel {
+  padding-left: 100px;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.slide-content h2 {
+  color: var(--color-red-hover);
+  font-size: 80px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.slide-content h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.slide-content p {
+  color: #F2F2F2;
+  font-size: 18px;
+}
+
+
+
+/*************  Finest  ****************/
+.at-finest {
+  padding: 80px 0px;
+}
+.at-finest .no-pad:nth-child(1) {
+  background-image: url(../images/finest-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+
+.at-finest .no-pad:nth-child(1) {
+  background-image: url(../images/finest-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.at-finest .no-pad:nth-child(2) {
+  background-image: url(../images/finest-2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.at-finest .no-pad:nth-child(3) {
+  background-image: url(../images/finest-3.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+
+.at-finest .no-pad:nth-child(4) {
+  background-image: url(../images/finest-4.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.at-finest .no-pad:nth-child(5) {
+  background-image: url(../images/finest-5.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.finest-txt {
+  padding: 70px;
+  text-align: center;
+}
+
+.finest-txt h3 {
+  color: #FFF;
+  font-size: 30px;
+}
+
+
+
+.finest-txt a {
+  position: absolute;
+  bottom: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.finest-txt a {
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+  padding: 6px 0px;
+  border-radius: 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.finest-txt a:hover {
+  color: var(--color-red-hover);
+  border-color: var(--color-red-hover);
+}
+
+/***************** Blog Carousel **************/
+
+
+.blogs-carousel a.vj {
+  border-bottom: 1px solid #000;
+  color: #000;
+  padding: 6px 0px;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.blog-slide-box {
+  padding: 0px 15px;
+}
+.blog-slide-box h3 {
+color: #000;
+font-family: Urbanist;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.blogs-carousel a.vj:hover {
+  color: var(--color-red-hover);
+  border-color: var(--color-red-hover);
+}
+
 /*************  Signature Fit ****************/
 .signature-fit {
   padding: 80px 0px;
 }
+
 /************ Handpicked  ********************/
 .handpicked {
   padding: 0px 0px;
@@ -662,7 +853,7 @@ ul.slick-nav li:hover svg {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 30%;
-  
+
 }
 
 
@@ -695,41 +886,49 @@ ul.slick-nav li:hover svg {
 .faqs-home {
   padding: 80px 0px;
 }
+
 .faqs-home .container.my-5 {
-width: 60%;
-margin: auto;
+  width: 60%;
+  margin: auto;
 }
 
 .accordion {
   --bs-accordion-border-color: #FFF2F2;
 }
+
 .accordion-item {
   margin-bottom: 10px;
   border: 1px solid #FFF2F2;
   border-radius: 0.375rem;
- 
+
 }
+
 .accordion-button {
   transition: background-color 0.3s ease;
   font-family: var(--text-font-family);
   font-size: 23px;
 }
+
 .accordion-button:not(.collapsed) {
   background-color: #FFF2F2;
   border-bottom: none;
   box-shadow: none;
 }
+
 .accordion-button:focus {
   box-shadow: none;
 }
+
 .accordion-body {
   transition: background-color 0.6s ease;
   font-size: 19px;
 }
+
 .accordion-collapse.show .accordion-body {
   background-color: #FFF2F2;
 
 }
+
 /****/
 .progress {
   display: block;
@@ -778,21 +977,21 @@ ul.footer-menu li a {
 ul.footer-menu {
   display: flex;
   flex-direction: column;
-  gap:16px;
+  gap: 16px;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
 ul.footer-menu.tos {
-  gap:30px;
-  
+  gap: 30px;
+
 }
 
 ul.footer-menu.tos a {
   color: #FFF;
   font-size: 16px;
-} 
+}
 
 
 
@@ -882,6 +1081,6 @@ ul.footer-menu li a:hover {
 
 .ftr-last {
   border-top: 1px solid #646464;
-  padding-top:50px;
+  padding-top: 50px;
   margin-top: 30px;
 }
