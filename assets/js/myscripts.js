@@ -9,6 +9,7 @@ $(document).ready(function () {
     prevArrow: '<button class="hero-btn-prev">Prev</button>',
   });
 
+  //POST Carousel
   $(".post-carousel").slick({
     infinite: true,
     slidesToShow: 2,
@@ -47,6 +48,48 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+    //Reviews Carousel
+    $(".reviews-carousel").slick({
+      infinite: true,
+      slidesToShow: 3,
+      centerMode: true,
+      centerPadding: "0px",
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      prevArrow: $(".prev"),
+      nextArrow: $(".next"),
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
+    });
 
   //BLOG HOME SLIDER
   $('.blog-slider').slick({
