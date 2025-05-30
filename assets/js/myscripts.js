@@ -12,7 +12,7 @@ $(document).ready(function () {
   //POST Carousel
   $(".post-carousel").slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     dots: false,

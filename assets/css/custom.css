@@ -681,7 +681,7 @@ ul.slick-nav li:hover svg {
 
 .slide-number {
   font-size: 18px;
-  color: #ff0000;
+  color: var(--color-red-hover);
   font-weight: bold;
 }
 
@@ -794,7 +794,9 @@ ul.slick-nav li:hover svg {
 }
 
 /***************** Blog Carousel **************/
-
+.blogs-carousel {
+  padding: 80px 0px;
+}
 
 .blogs-carousel a.vj {
   border-bottom: 1px solid #000;
@@ -808,8 +810,11 @@ ul.slick-nav li:hover svg {
   transition: all 0.3s;
 }
 
+.blogs-carousel .s
+
 .blog-slide-box {
   padding: 0px 15px;
+  width: 70%;
 }
 
 .blog-slide-box h3 {
