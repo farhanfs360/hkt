@@ -602,10 +602,15 @@ ul.slick-nav li:hover svg {
   padding-left: 100px;
 }
 
+.post-carousel .slide-box {
+  
+}
+
 .slide-content {
+  width: 80%;
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 55px;
 }
 
 .slide-content h2 {
@@ -623,13 +628,16 @@ ul.slick-nav li:hover svg {
   font-weight: 100;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .slide-content p {
   color: #F2F2F2;
   font-size: 18px;
 }
-
+.slide-content img {
+  width: 500px;
+}
 /*************  Reviews Carousel  ****************/
 .review-sec {
   padding: 80px 0px;
@@ -794,7 +802,7 @@ ul.slick-nav li:hover svg {
 }
 
 /***************** Blog Carousel **************/
-.blogs-carousel {
+section.blogs-carousel {
   padding: 80px 0px;
 }
 
@@ -810,7 +818,7 @@ ul.slick-nav li:hover svg {
   transition: all 0.3s;
 }
 
-.blogs-carousel .s
+
 
 .blog-slide-box {
   padding: 0px 15px;

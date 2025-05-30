@@ -13,6 +13,8 @@ $(document).ready(function () {
   $(".post-carousel").slick({
     infinite: true,
     slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "160px",
     slidesToScroll: 1,
     arrows: true,
     dots: false,
