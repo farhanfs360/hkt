@@ -49,48 +49,75 @@ $(document).ready(function () {
     ],
   });
 
-    //Reviews Carousel
-    $(".reviews-carousel").slick({
-      infinite: true,
-      slidesToShow: 3,
-      centerMode: true,
-      centerPadding: "0px",
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      autoplay: true,
-      prevArrow: $(".prev"),
-      nextArrow: $(".next"),
-      responsive: [
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ],
-    });
+  //reviews slider
+  $(".reviews-carousel").slick({
+    infinite: true,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
 
+  // Update navigation on slide change
+  $('.reviews-carousel').on('afterChange', function(event, slick, currentSlide){
+    var totalSlides = slick.slideCount;
+    var currentSlideNum = currentSlide + 1;
+
+    // Update slide numbers
+    $('.current-slide').text(('0' + currentSlideNum).slice(-2));
+    $('.total-slides').text(('0' + totalSlides).slice(-2));
+
+    // Calculate progress for the bar
+    var progress = ((currentSlideNum - 1) / (totalSlides - 1)) * 100;
+    if (totalSlides === 1) {
+      progress = 100; // If only one slide, fill the bar completely
+    }
+    $('.progress').css('width', progress + '%');
+  });
+
+  // Initialize navigation on load
+  $('.reviews-carousel').on('init', function(event, slick){
+    var totalSlides = slick.slideCount;
+    $('.total-slides').text(('0' + totalSlides).slice(-2));
+    // Set initial progress (first slide)
+    var progress = (0 / (totalSlides - 1)) * 100;
+    if (totalSlides === 1) {
+      progress = 100;
+    }
+    $('.progress').css('width', progress + '%');
+  });
+
+        //end of review slider
   //BLOG HOME SLIDER
   $('.blog-slider').slick({
     centerMode: true,
@@ -126,7 +153,7 @@ $(document).ready(function () {
   // END
 
   //
-
+/*
   $(document).ready(function () {
     var $slider = $(".fbd-slider");
     var $progressBar = $(".progress");
@@ -152,18 +179,9 @@ $(document).ready(function () {
       speed: 400,
     });
   });
-
+*/
   //
 
-  $(".fbd-slider").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-
-  });
 
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();

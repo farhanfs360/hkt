@@ -347,11 +347,11 @@ header .btn.btn-cta:hover i,
 /********************************/
 .btn.btn-cta.dark,
 .btn.btn-cta.dark {
-  padding: 16px 26px 16px 26px;
+  padding: 10px 16px;
   background: transparent;
   border: 1px solid #000;
   color: #000;
-  font-size: 18px;
+  font-size: 17px;
   width: fit-content;
   text-transform: uppercase;
   border-radius: 0;
@@ -416,7 +416,7 @@ header .btn.btn-cta:hover i,
   right: 0;
 }
 
-.hero-btn a {  
+.hero-btn a {
   background-color: transparent;
   color: #FFF;
   padding: 6px 0px;
@@ -433,26 +433,6 @@ header .btn.btn-cta:hover i,
 }
 
 
-/************ WHY CHOOSE **************/
-
-.why-choose {
-  padding: 50px 0px;
-}
-
-.wc-box-cont {}
-
-.wc-box-cont h3 {
-  font-size: 24px;
-  color: var(--color-text-black);
-  font-weight: 700;
-  margin: 20px 0px 10px 0px;
-}
-
-.wc-box-cont p {
-  font-size: 18px;
-  color: var(--color-text-black);
-  font-weight: 500;
-}
 
 /* ==== POST Sections ==== */
 
@@ -608,77 +588,9 @@ ul.slick-nav li:hover svg {
   stroke: #FFF;
 }
 
-/* ==== Our Promise ==== */
-.our-promoise {
-  padding: 80px 0px 80px;
-  background-color: #292929;
-}
 
-.our-promoise .head h2,
-.our-promoise .head p {
-  color: #f0ebe3;
-}
 
-.promise-aside {
-  max-width: 90%;
-  float: right;
-  margin-top: -90px;
-}
 
-.proms-pts {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  border-bottom: 1px solid #51504e;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-}
-
-.proms-pts li:first-child img {
-  width: 36px;
-}
-
-.proms-pts li:last-child h3 {
-  color: #f0ebe3;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-}
-
-/****** feedback Section ******/
-.feedbk {
-  padding: 60px 0px;
-}
-
-.fdbk {
-  padding: 0px;
-}
-
-.fdbk h3 {
-  font-size: 40px;
-  color: var(--color-text-black);
-  font-weight: bold;
-}
-
-.fdbk p {
-  font-size: 16px;
-  color: var(--color-text-black);
-}
-
-.fdbk p.clnt {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--color-text-black);
-}
-
-.qtsign {
-  text-align: right;
-}
-
-.qtsign img {
-  max-width: 70px;
-  display: inline-block;
-}
 
 /*************** From the first fitting to final *********************/
 .first-fitting {
@@ -691,18 +603,18 @@ ul.slick-nav li:hover svg {
 }
 
 .slide-content {
-    display: flex;
-    align-items: center;
-    gap: 35px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
 .slide-content h2 {
   color: var(--color-red-hover);
   font-size: 80px;
-font-style: italic;
-font-weight: 300;
-line-height: normal;
-text-transform: uppercase;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .slide-content h3 {
@@ -712,6 +624,7 @@ text-transform: uppercase;
   line-height: normal;
   text-transform: uppercase;
 }
+
 .slide-content p {
   color: #F2F2F2;
   font-size: 18px;
@@ -728,21 +641,25 @@ text-transform: uppercase;
   margin: 30px 10px;
 
 }
+
 .review-box .review-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
+
 .review-box .review-content p.review-text {
-margin: 30px 0px 40px;
-font-size: 18px;
+  margin: 30px 0px 40px;
+  font-size: 18px;
 }
 
 .review-box .review-content p.review-title {
   margin: 0;
   padding: 0;
-  font-size: 20px;}
+  font-size: 20px;
+}
+
 .review-box .review-content img {
   width: 160px !important;
 }
@@ -752,11 +669,44 @@ font-size: 18px;
   transition: all 0.9s;
 }
 
+/**/
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 10px 0;
+  margin: 20px auto 0px;
+}
+
+.slide-number {
+  font-size: 18px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 4px;
+  background: #ddd;
+  position: relative;
+  margin: 0 15px;
+}
+
+.progress {
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
 
 /*************  Finest  ****************/
 .at-finest {
   padding: 80px 0px;
 }
+
 .at-finest .no-pad:nth-child(1) {
   background-image: url(../images/finest-1.png);
   background-repeat: no-repeat;
@@ -857,17 +807,19 @@ font-size: 18px;
   width: fit-content;
   transition: all 0.3s;
 }
+
 .blog-slide-box {
   padding: 0px 15px;
 }
+
 .blog-slide-box h3 {
-color: #000;
-font-family: Urbanist;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-padding-right: 50px;
+  color: #000;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 50px;
 }
 
 .blogs-carousel a.vj:hover {
@@ -932,22 +884,22 @@ padding-right: 50px;
   padding: 1rem;
   outline: none !important;
   color: #212121;
-font-family: var(--text-font-family);
-font-size: 23.54px;
-font-style: normal;
+  font-family: var(--text-font-family);
+  font-size: 23.54px;
+  font-style: normal;
 }
 
 .accordion-button:focus,
 .accordion-button:active,
-  .accordion-button:focus {
-    box-shadow: none !important;
-    outline: none !important;
-  }
-  
-  .accordion-button:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-  }
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 .accordion-button:not(.collapsed) {
   background-color: #fff;
@@ -970,6 +922,7 @@ font-style: normal;
   font-size: 18px;
   font-weight: 400;
 }
+
 .faq-icon::before {
   content: '+';
   font-size: 30px;
@@ -982,8 +935,45 @@ font-style: normal;
   content: '−';
 }
 
+.chat-modle {
+  position: absolute;
+  bottom: 0;
+  padding-left: 20px;
+}
+.chat-col {
+  border-radius: 15.153px;
+  border: 1.086px solid #CFCFCF;
+  padding: 27px;
 
-/****/
+}
+
+.chat-col h3 {
+  font-weight: 700;
+  padding: 15px 0px;
+  font-size: 25px;
+}
+
+.chat-col p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.btn.btn-cta.cht {
+  background-color: #000;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn.btn-cta.cht:hover {
+  background-color: var(--color-red-hover);
+}
+
+.chat-btn img {
+  max-width: 76px;
+}
+
+/****
 .progress {
   display: block;
   width: 100%;
@@ -997,6 +987,7 @@ font-style: normal;
   background-size: 10% 100%;
   transition: background-size 0.5s ease-in-out;
 }
+*/
 
 /****** pre footer ************/
 
