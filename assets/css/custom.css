@@ -433,6 +433,12 @@ header .btn.btn-cta:hover i,
   border-color: var(--color-red-hover);
 }
 
+.heading-cta{
+  position: relative;
+  bottom: 0;
+  text-decoration: underline ;
+  text-underline-offset: 8px;
+}
 
 
 /* ==== POST Sections ==== */
@@ -1163,7 +1169,21 @@ ul.footer-menu li a:hover {
   color: #fff;
 }
 
+.finest-txt.col-sec {
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .img-tuxedo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.img-custom-consultation {
   width: 100%;
   height: 100%;
   object-fit: cover;
