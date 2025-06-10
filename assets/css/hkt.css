@@ -230,7 +230,7 @@
 }
 
 .contact-form-wrapper {
-    width: 1113px;
+    width: 100%;
     margin: 0 auto;
     padding: 48.688px 97.201px 50.883px 97.375px;
     border-radius: 19.475px;
@@ -318,6 +318,8 @@
     }
 
     .contact-form-wrapper {
+        width: 95%;
+        margin: 0 auto;
         padding: 30px 20px;
     }
 
@@ -700,11 +702,21 @@
     z-index: 2;
 }
 
-.arrow{
+.arrow {
     padding: 2px;
     background: #000;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     color: #FFF;
+}
+
+.section-headind-red {
+    color: #A42126;
+    font-family: "Canela Trial";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
 }
