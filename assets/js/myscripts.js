@@ -27,6 +27,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
           infinite: true,
           dots: true,
         },
@@ -35,6 +37,8 @@ $(document).ready(function () {
         breakpoint: 900,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
+          centerPadding: "0px",
           slidesToScroll: 1,
         },
       },
@@ -42,6 +46,8 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
+          centerPadding: "0px",
           slidesToScroll: 1,
         },
       },
