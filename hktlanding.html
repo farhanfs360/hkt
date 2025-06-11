@@ -19,11 +19,11 @@
     <link href="assets/css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
-
+   <link href="assets/css/custom.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/hkt.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
+   
 
     <style>
         .section-heading {
@@ -50,7 +50,9 @@
         }
 
         .contact-details p {
-            margin-bottom: 0.5rem;
+
+            margin-bottom: 0;
+            line-height: 1.2em;
         }
 
         .contact-details h5 {
@@ -72,12 +74,13 @@
         .icon {
             width: 35px;
             height: 35px;
-            margin-right: 10px;
+            margin-right: 20px;
+            margin-top: 15px;
         }
 
         .contact-item {
             display: flex;
-            align-items: center;
+            align-items: start;
             margin-bottom: 10px;
         }
 
@@ -125,11 +128,9 @@
         .service-card {
             position: relative;
             overflow: hidden;
-            width: 300px;
-            /* Adjust width to ensure cards fit nicely */
+            width: 100%;
             height: 100%;
             margin-bottom: 20px;
-            /* Add space between rows */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -148,7 +149,7 @@
             text-align: center;
             /* Dark background for text visibility */
             color: white;
-            padding: 15px;
+            padding: 35px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
@@ -185,7 +186,7 @@
         }
 
         .service-text {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 0;
         }
@@ -223,6 +224,36 @@
             font-weight: 700;
             margin-top: 10px;
         }
+
+        p.cs {
+            color: #505050;
+        }
+
+        .review-title {
+            line-height: 1em;
+        }
+
+        .rev-dp {
+            font-size: 14px;
+            color: #505050;
+            padding: 3px 0px 3px;
+            margin: 0;
+            display: block;
+            line-height: 1em;
+        }
+
+        .rev-ind {
+            padding: 3px 0px 3px;
+            line-height: 1em;
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+
+        .review-box .review-content p.review-text {
+            min-height: 290px;
+        }
     </style>
 </head>
 
@@ -230,16 +261,26 @@
     <header class="header desktop">
         <div class="container">
             <div class="row d-md-flex align-items-center justify-content-between">
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="col-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                     <a class="site-logo" href="/"><img src="assets/images/hkt-logo.png" alt="Logo" /></a>
                 </div>
 
-                <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5 text-end">
+                <div class="col-8 col-md-5 col-lg-5 col-xl-5 col-xxl-5 text-end">
                     <a href="" class="btn btn-cta">Schedule an appointment</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="fx-btns">
+        <ul>
+            <li>
+                <a href=""><img src="" /></a>
+            </li>
+            <li>
+                <a href=""><img src="" /></a>
+            </li>
+        </ul>
+    </div>
     <!--- Hero Section -->
     <section class="hero-sec d-none">
         <div class="container">
@@ -263,12 +304,9 @@
             <div class="row w-100">
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="">
-                        <h1 class="landing-heading-white">
-                            PERFECT FIT FOR
-                        </h1>
-                        <h1 class="landing-heading">
-                            PERFECT MOMENTS
-                        </h1>
+                        <h1>
+                            PERFECT FIT FOR <span>PERFECT MOMENTS</span>
+                        </h1>                       
                         <p class="landing-para">Turning personal style into statement outfits isn’t just a profession,
                             it’s a family
                             tradition rooted in my heritage.</p>
@@ -285,26 +323,33 @@
     <section class="at-hkt-clt" data-aos="fade-up">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 pd-r-40">
+                <div class="col-12 col-md-6">
 
-
-                    <img src="assets/images/at-hkt-clothier.png" alt="" />
+                    <img src="assets/images/at-hkt-clothier2.png" alt="" />
                 </div>
-                <div class="col-12 col-md-6 pd-l-40 pd-t-40">
-                    <h2 class="text-end">
-                        At HKT Clothiers, <span>Every Stitch Tells a Story</span>
+                <div class="col-12 col-md-6 pd-l-40 pd-r-40">
+                    <h2 class="text-left">
+                        excellence is our promise<br /><span>quality defines us</span>
                     </h2>
-                    <p class="mt-5">
-                        “Turning personal style into statement outfits isn’t just a profession, it’s a family tradition
-                        rooted in my heritage. From the streets of Malta where my father ran
-                        his textile business to 1950s Atlanta, where my uncle founded HKT,</p>
+                    <p class="mt-5 cs">
+                        With over 50 years of family expertise, we have been perfecting the art of custom suit
+                        craftsmanship. We've proudly dressed CEOs, business professionals, and thousands of discerning
+                        gentlemen who demand the very best.</p>
 
                     </p>
-                    Today at HKT, we lead a dedicated team of skilled tailors and style consultants with years of
-                    experience and unmatched agility in designing the smoothest cuts and stunning silhouettes that
-                    balance precision, craftsmanship, and personal style. From selecting the finest fabrics to choosing
-                    the perfect lining, to us, every detail matters in creating the best custom suits in Atlanta for
-                    you.”
+                    <p class="mt-2 cs">
+                        <strong>Award-Winning Craftsmanship</strong><br />
+                        Expert tailoring recognized by industry professionals and trusted by discerning clients in
+                        Atlanta.
+                    </p>
+                    <p class="mt-2 cs">
+                        <strong>Premium, Handpicked Fabrics</strong><br />
+                        Luxurious materials carefully selected from the world's most prestigious mills and renowned
+                        textile houses.
+                    </p>
+                    <p class="mt-2 cs">
+                        <strong>Perfect Fit Promise</strong><br />
+                        Our commitment to precision ensures complete satisfaction with every custom garment we create.
                     </p>
 
                     <div class="row pt-5 awds">
@@ -342,12 +387,11 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="">
-                        Let’s Curate Your <br> <span class="section-headind-red">Perfect FIT Together</span>
+                        LET'S TAILOR YOUR<br /> <span>PERFECT STYLE TOGETHER</span>
                     </h2>
-                    <p class="pt-4 pb-4">
-                        Every tuxedo starts with a vision and a commitment to making you feel truly majestic. Here’s
-                        a <br> glimpse of the tuxedos we’ve made with care for the glorious moments of our clients'
-                        lives.
+                    <p class="pt-4 pb-4 cs">
+                        Every suit begins with a vision and a promise to make you look and feel your best,<br />
+                        crafting one of the finest fitting suits you'll own.
                     </p>
                 </div>
             </div>
@@ -355,68 +399,63 @@
             <!-- Services Grid -->
             <div class="row services-grid">
                 <!-- Service 1: Suits -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="assets/images/Curate-1.png" alt="Elegant black suit" class="img-fluid">
+                            <img src="assets/images/curate-1a.png" alt="Elegant black suit" class="img-fluid">
                             <div class="service-content-bottom">
-                                <h3 class="service-title">Suits</h3>
-                                <p class="service-text">Every suit is crafted with precision and care - we understand
-                                    that exceptional tailoring begins.</p>
+                                <h3 class="service-title">Tuxedoes</h3>
+                                <p class="service-text">For your boldest, most memorable moments—ideal for black-tie
+                                    events, milestone celebrations, and unforgettable weddings.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 2: Tuxedos -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="assets/images/Curate-2.jpg" alt="Formal tuxedo with bow tie" class="img-fluid">
+                            <img src="assets/images/curate-2a.png" alt="Formal tuxedo with bow tie" class="img-fluid">
                             <div class="service-content-bottom">
-                                <h3 class="service-title">Tuxedos</h3>
-                                <p class="service-text">For your boldest, most memorable moments, ideal for black-tie
-                                    events and celebrations.</p>
+                                <h3 class="service-title">Suits</h3>
+                                <p class="service-text">Tailored to fit, designed to impress, perfect for work,
+                                    weddings, or refined everyday style.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 3: Jackets -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="assets/images/Curate-3.png" alt="Casual blazer jacket" class="img-fluid">
+                            <img src="assets/images/curate-3a.png" alt="Casual blazer jacket" class="img-fluid">
                             <div class="service-content-bottom">
-                                <h3 class="service-title">Jackets</h3>
-                                <p class="service-text">Every jacket is designed with elegance and fit to make you look
-                                    sharp.</p>
+                                <h3 class="service-title">Sport Jackets</h3>
+                                <p class="service-text">Smart, stylish layers for any occasion, from casual outings to
+                                    formal affairs.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 4: Pants -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="assets/images/Curate-4.png" alt="White dress pants" class="img-fluid">
-                            <div class="service-content-bottom">
-                                <h3 class="service-title">Pants</h3>
-                                <p class="service-text">Tailored pants to match your personal style and occasion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
 
             <!-- slider scale nav -->
             <div class="custom-nav">
-                <span class="slide-number current-slide">01</span>
+                <span class="slide-number current-slide1">01</span>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0%;"></div>
                 </div>
-                <span class="slide-number total-slides">04</span>
+                <span class="slide-number total-slides1">03</span>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="" class="btn btn-cta dark">Schedule an appointment</a>
+                </div>
             </div>
         </div>
     </section>
@@ -428,9 +467,9 @@
                     <h2 class="w-75 mx-auto">
                         Trusted by Generations <span>Loved by Clients</span>
                     </h2>
-                    <p class="pt-4 pb-4">
-                        Every fit is crafted with precision and care, we understand that exceptional tailoring begins
-                        with listening to your story
+                    <p class="pt-4 pb-4 cs">
+                        Every suit is crafted with precision and care, we understand that exceptional<br /> tailoring
+                        begins with listening to your story
                     </p>
                 </div>
             </div>
@@ -442,64 +481,61 @@
                             <div class="review-content">
                                 <img src="assets/images/re-star-img.png" alt="" />
                                 <p class="review-text">
-                                    Genuine care and professionalism every time I come in. From tailor suit jackets to
-                                    hemmed jeans, always a bang up job and quick turn around times.
+                                    If you're wanting to build a quality relationship that is invested in your conduct
+                                    and appearance, you can find none better than HKT.
                                 </p>
-                                <p class="review-title">Dave Bartek</p>
+                                <p class="review-title">Sigismund Lee
+                                    <span class="cs rev-dp">Board Certified Surgeon</span>
+                                    <span class="rev-ind">Custom Business Suit</span>
+                                </p>
+
                             </div>
                         </div>
                         <div class="review-box">
                             <div class="review-content">
                                 <img src="assets/images/re-star-img.png" alt="" />
                                 <p class="review-text">
-                                    "The professionalism and punctuality exhibited by the service were truly
-                                    commendable. They not only addressed every issue promptly but also offered
-                                    innovative and good solutions."
+                                    I want to thank HKT Clothiers for the amazing service they provided, my experience
+                                    was incredible! I was treated as if I was an A-list celebrity from beginning to end.
+                                    The designer and manager worked closely with me to customize my wedding suit which
+                                    turned out to be iconic in my wedding with my beautiful bride.
                                 </p>
-                                <p class="review-title">Michael Brown</p>
+                                <p class="review-title">Bruce Ballard
+                                    <span class="cs rev-dp">Groom</span>
+                                    <span class="rev-ind">Custom Wedding Suit</span>
+                                </p>
                             </div>
                         </div>
                         <div class="review-box">
                             <div class="review-content">
                                 <img src="assets/images/re-star-img.png" alt="" />
                                 <p class="review-text">
-                                    My shirt was impeccably tailored, fitting flawlessly and exuding an exceptional
-                                    level of craftsmanship. I wholeheartedly recommend HKT Clothiers.
+                                    Great experience getting a custom suit here. They have lots of options for fabrics
+                                    and are very helpful to find what you’re looking for, even for people new to suits
+                                    like me. The fitting and custom made process was the way to go, the suit fits
+                                    perfectly which is something I’ve never experienced before. Great people!
                                 </p>
-                                <p class="review-title">Johnathan Law</p>
+                                <p class="review-title">Nick Ray
+                                    <span class="rev-ind">Special Occasion Suit</span>
+                                </p>
                             </div>
                         </div>
                         <div class="review-box">
                             <div class="review-content">
                                 <img src="assets/images/re-star-img.png" alt="" />
                                 <p class="review-text">
-                                    Genuine care and professionalism every time I come in. From tailor suit jackets to
-                                    hemmed jeans, always a bang up job and quick turn around times.
+                                    I want to thank HKT Clothiers for the amazing service they provided, my experience
+                                    was incredible! I was treated as if I was an A-list celebrity from beginning to end.
+                                    The designer and manager worked closely with me to customize my wedding suit which
+                                    turned out to be iconic in my wedding with my beautiful bride.
                                 </p>
-                                <p class="review-title">Dave Bartek</p>
+                                <p class="review-title">Bruce Ballard
+                                    <span class="cs rev-dp">Groom</span>
+                                    <span class="rev-ind">Custom Wedding Suit</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="review-box">
-                            <div class="review-content">
-                                <img src="assets/images/re-star-img.png" alt="" />
-                                <p class="review-text">
-                                    "The professionalism and punctuality exhibited by the service were truly
-                                    commendable. They not only addressed every issue promptly but also offered
-                                    innovative and good solutions."
-                                </p>
-                                <p class="review-title">Michael Brown</p>
-                            </div>
-                        </div>
-                        <div class="review-box">
-                            <div class="review-content">
-                                <img src="assets/images/re-star-img.png" alt="" />
-                                <p class="review-text">
-                                    My shirt was impeccably tailored, fitting flawlessly and exuding an exceptional
-                                    level of craftsmanship. I wholeheartedly recommend HKT Clothiers.
-                                </p>
-                                <p class="review-title">Johnathan Law</p>
-                            </div>
-                        </div>
+
                     </div>
                     <!-- slider scale nav -->
                     <div class="custom-nav">
@@ -525,7 +561,7 @@
                         <span class="text-"> Perfection</span>
                     </h2>
                     <p class="pt-4 pb-4 text-light">
-                        From first fitting to final stitch, we’re here to craft pieces that speak to your <br>
+                        From first fitting to final stitch, we’re here to craft pieces that speak to your
                         personality, your lifestyle, and your story.
                     </p>
                 </div>
@@ -553,52 +589,70 @@
                     </div>
                     <div class="slide-box">
                         <div class="slide-content">
-                            <div><img src="assets/images/fiting-1.png" /></div>
-                            <div>
-                                <h2>01</h2>
-                            </div>
-                            <div class="side-text">
-                                <h3>Style consultation</h3>
-                                <p>
-                                    We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                    when and where you’ll wear it. We’ll then make recommendations about the style and
-                                    look we think will meet your needs and express your individuality.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-box">
-                        <div class="slide-content">
-                            <div><img src="assets/images/fiting-1.png" /></div>
+                            <div><img src="assets/images/crafted-2.png" /></div>
                             <div>
                                 <h2>02</h2>
                             </div>
                             <div class="side-text">
-                                <h3>Style consultation</h3>
+                                <h3>Customer’s measurements</h3>
                                 <p>
-                                    We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                    when and where you’ll wear it. We’ll then make recommendations about the style and
-                                    look we think will meet your needs and express your individuality.
+                                    Each of our clients has their own pattern which serves as a blueprint for their
+                                    garments. To create yours, we will carefully take a series of measurements from your
+                                    body.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="slide-box">
                         <div class="slide-content">
-                            <div><img src="assets/images/fiting-1.png" /></div>
+                            <div><img src="assets/images/crafted-3.png" /></div>
                             <div>
                                 <h2>03</h2>
                             </div>
                             <div class="side-text">
-                                <h3>Style consultation</h3>
+                                <h3>Creation of the garment</h3>
                                 <p>
-                                    We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                    when and where you’ll wear it. We’ll then make recommendations about the style and
-                                    look we think will meet your needs and express your individuality.
+                                    Using your unique pattern, we precisely cut out the individual panels of your
+                                    garment from the luxurious fabric you’ve selected. We then begin to assemble any
+                                    additional materials such as pockets and linings.
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="slide-box">
+                        <div class="slide-content">
+                            <div><img src="assets/images/crafted-4.png" /></div>
+                            <div>
+                                <h2>04</h2>
+                            </div>
+                            <div class="side-text">
+                                <h3>First fitting and marking up</h3>
+                                <p>
+                                    Because of our meticulous attention to detail, many of our clients are completely
+                                    satisfied with the fit of their garment following a first fitting. However, if we
+                                    feel adjustments need to be made to create an even better fit or look for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide-content">
+                            <div><img src="assets/images/crafted-5.png" /></div>
+                            <div>
+                                <h2>05</h2>
+                            </div>
+                            <div class="side-text">
+                                <h3>Final fitting</h3>
+                                <p>
+                                    During the final fitting, we precisely check the alterations we made to your garment
+                                    following the first fitting. We also take the time to closely inspect all areas of
+                                    your new piece of clothing again, making sure every aspect of it meets our exacting
+                                    standards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -632,18 +686,17 @@
     <!-- 3rd Last Map Section -->
     <section class="container my-5">
         <!-- Left Column: Address, Contact, Hours -->
-        <div class="text-center mb-5">
-            <h2 class="fs-1 mb-4">ATLANTA’S PREMIER CUSTOM <br> <span>SUIT DESTINATION</span></h2>
-            <p style="font-size: 14px;">Our showroom offers a luxurious experience with convenient access from
-                anywhere in the <br> Atlanta metro area and a short 7-minute drive from DeKalb-Peachtree Airport.
-            </p>
-        </div>
-        <div class="row align-items-center gap-5">
+        <div class="row align-items-center gap-0">
             <!-- Right Column: Map Image -->
-            <div class="col-md-7">
-                <div class="map-container"></div>
-            </div>
-            <div class="col-md-4">
+
+            <div class="col-md-6">
+                <div class="text-left mb-2">
+                    <h2 class="fs-1 mb-4">ATLANTA’S PREMIER CUSTOM <br> <span>SUIT DESTINATION</span></h2>
+                    <p style="font-size: 14px;">Our showroom offers a luxurious experience with convenient access from
+                        anywhere in the <br> Atlanta metro area and a short 7-minute drive from DeKalb-Peachtree
+                        Airport.
+                    </p>
+                </div>
                 <div class="contact-details">
                     <!-- Address Section -->
                     <div class="contact-item">
@@ -710,6 +763,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map-container"></div>
             </div>
         </div>
     </section>
@@ -817,16 +873,15 @@
             <!-- Main footer content -->
             <div class="row align-items-center py-4">
                 <!-- Logo -->
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center">
                     <a class="footer-logo" href="/"><img src="assets/images/footer-logo.png" alt="Logo"
                             class="footer-logo" /></a>
                 </div>
                 <!-- Description text -->
-                <div class="col-lg-8 col-md-6 col-sm-12 mb-3 mb-md-0">
+                <div class="col-12 col-lg-8 col-md-6 col-sm-12 mb-3 mb-md-0">
                     <p class="footer-description mb-0">
                         At HKT, helping people look their best is part of our heritage. Inspired by my <br> father’s
-                        textile
-                        business in Malta and my uncle Cliff Vaswani’s founding of HKT in <br> 1970, we’re built on hard
+                        textile business in Malta and my uncle Cliff Vaswani’s founding of HKT in <br> 1970, we’re built on hard
                         work, exceptional service, and fine craftsmanship.
                     </p>
                 </div>
@@ -847,14 +902,14 @@
                 <!-- Terms & Privacy -->
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-2 mb-md-0">
                     <div class="footer-links">
-                        <a href="#" class="footer-link me-4">Terms & Conditions</a>
-                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="text-light">Terms & Conditions</a>
+                        <a href="#" class="text-light">Privacy Policy</a>
                     </div>
                 </div>
 
                 <!-- Copyright -->
                 <div class="col-lg-4 col-md-12 col-sm-12 text-center mb-2 mb-lg-0">
-                    <p class="footer-copyright mb-0">© 2023 Copyright HKT COACHING</p>
+                    <p>© 2023 Copyright HKT COACHING</p>
                 </div>
 
                 <!-- Social Icons -->
@@ -897,7 +952,7 @@
             // Initialize the carousel with 4 items visible at a time
             $(".services-carousel").slick({
                 infinite: true,
-                slidesToShow: 4, // Show 4 slides at once
+                slidesToShow: 3, // Show 4 slides at once
                 slidesToScroll: 1,
                 arrows: true,
                 dots: true,  // Add dots for navigation

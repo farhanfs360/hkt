@@ -37,6 +37,9 @@ h2 {
   text-transform: uppercase;
 }
 
+h1 span {
+  color: var(--color-red-hover);
+}
 h2 span {
   color: var(--color-red-hover);
 }
