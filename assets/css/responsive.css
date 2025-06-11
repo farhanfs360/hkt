@@ -7,6 +7,21 @@
 /* Extra small devices (phones, 1024px and down) */
 
 @media only screen and (max-width: 992px) {
+   .post-carousel {
+        padding-left: 20px;
+    }
+    .slide-content {
+        width:100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .slide-content img {
+        width:100%;
+        height: 400px;
+    }
+    .at-hkt-clt .text-left {
+        padding-top: 20px;
+    }
   .no-mob {
     display: none;
   }
@@ -26,7 +41,7 @@
   }
 
   .hero-content h1 span {
-    font-size: 36px;
+    font-size: 22px;
   }
   .hero-content p {
     font-size: 16px;

@@ -462,6 +462,9 @@
     .location-icon {
         margin-left: auto;
     }
+    .handpicked-hkt {
+        background: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -471,8 +474,9 @@
     }
 
     .footer-description {
-        font-size: 0.8rem;
+        font-size: 15px;
         padding: 0 1rem;
+        line-height: 1.7em;
     }
 
     .footer-links {
@@ -618,6 +622,37 @@
 }
 
 @media (max-width: 768px) {
+    .post-carousel {
+        padding-left: 20px;
+    }
+    .slide-content {
+        width:100%;
+        text-align: center;
+    }
+    .slide-content img {
+        width:300px;
+        height: 400px;
+    }
+    .at-hkt-clt .text-left {
+        padding-top: 20px;
+    }
+    header .btn.btn-cta, .btn.btn-cta {
+    padding: 9px;
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #fff;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--text-font-family);
+    transition: all 0.2s;
+}
+    .landing-para {
+        max-width: 100%;
+    }
     .tailoring-services {
         padding: 60px 0;
     }
@@ -818,7 +853,7 @@
 .service-card {
     position: relative;
     overflow: hidden;
-    width: 300px;
+    width: 100%;
     /* Adjust width to ensure cards fit nicely */
     height: 100%;
     margin-bottom: 20px;
