@@ -254,6 +254,18 @@
         .review-box .review-content p.review-text {
             min-height: 290px;
         }
+
+        .fx-btns {
+            position: fixed;
+            right: 0;
+            top: 30%;
+            z-index: 9999;
+        }
+
+        .fx-btns li a img {
+            width:60px;
+            margin:5px 0px;
+        }
     </style>
 </head>
 
@@ -274,10 +286,10 @@
     <div class="fx-btns">
         <ul>
             <li>
-                <a href=""><img src="" /></a>
+                <a href="tel:+1 770-458-8682"><img src="assets/images/ct-call.png" /></a>
             </li>
             <li>
-                <a href=""><img src="" /></a>
+                <a href="#cform"><img src="assets/images/ct-schedue.png" /></a>
             </li>
         </ul>
     </div>
@@ -783,7 +795,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="banner-cta">
-                            <button class="btn-appointment">Schedule AN APPOINTMENT</button>
+                            <a href="#cform" class="btn btn-cta">Schedule an appointment</a>
                         </div>
                     </div>
                 </div>
@@ -806,7 +818,7 @@
         </div>
     </section>
     <!-- contact form -->
-    <section class="contact-section overflow-hidden">
+    <section id="cform" class="contact-section overflow-hidden">
         <div class="">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
