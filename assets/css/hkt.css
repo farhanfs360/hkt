@@ -390,8 +390,10 @@
 }
 
 .footer-links {
-    display: flex;
+            display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .footer-link {
