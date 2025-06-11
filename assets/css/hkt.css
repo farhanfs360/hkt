@@ -15,7 +15,11 @@
     color: #FFFFFF;
     font-size: 20px;
 }
-
+.slide-box video {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
 .handpicked-hkt {
     padding: 0px 0px;
     margin: 80px auto;
