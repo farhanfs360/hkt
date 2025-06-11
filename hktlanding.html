@@ -19,11 +19,11 @@
     <link href="assets/css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
-   <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/hkt.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-   
+
 
     <style>
         .section-heading {
@@ -254,6 +254,18 @@
         .review-box .review-content p.review-text {
             min-height: 290px;
         }
+
+        .fx-btns {
+            position: fixed;
+            right: 0;
+            top: 30%;
+            z-index: 9999;
+        }
+
+        .fx-btns li a img {
+            width:60px;
+            margin:5px 0px;
+        }
     </style>
 </head>
 
@@ -274,10 +286,10 @@
     <div class="fx-btns">
         <ul>
             <li>
-                <a href=""><img src="" /></a>
+                <a href="tel:+1 770-458-8682"><img src="assets/images/ct-call.png" /></a>
             </li>
             <li>
-                <a href=""><img src="" /></a>
+                <a href="#cform"><img src="assets/images/ct-schedue.png" /></a>
             </li>
         </ul>
     </div>
@@ -306,7 +318,7 @@
                     <div class="">
                         <h1>
                             PERFECT FIT FOR <span>PERFECT MOMENTS</span>
-                        </h1>                       
+                        </h1>
                         <p class="landing-para">Turning personal style into statement outfits isn’t just a profession,
                             it’s a family
                             tradition rooted in my heritage.</p>
@@ -783,7 +795,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="banner-cta">
-                            <button class="btn-appointment">Schedule AN APPOINTMENT</button>
+                            <a href="#cform" class="btn btn-cta">Schedule an appointment</a>
                         </div>
                     </div>
                 </div>
@@ -806,12 +818,14 @@
         </div>
     </section>
     <!-- contact form -->
-    <section class="contact-section overflow-hidden">
+    <section id="cform" class="contact-section overflow-hidden">
         <div class="">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <div class="contact-form-wrapper">
-                        <form accept-charset="UTF-8" action="https://uio475.infusionsoft.com/app/form/process/09526b22ba27bf1f1c7f02a1d5b847d6" class="contact-form">
+                        <form accept-charset="UTF-8"
+                            action="https://uio475.infusionsoft.com/app/form/process/09526b22ba27bf1f1c7f02a1d5b847d6"
+                            class="contact-form">
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-3 mb-md-0">
                                     <label class="from-label" for="firstName">First Name</label>
@@ -881,7 +895,8 @@
                 <div class="col-12 col-lg-8 col-md-6 col-sm-12 mb-3 mb-md-0">
                     <p class="footer-description mb-0">
                         At HKT, helping people look their best is part of our heritage. Inspired by my <br> father’s
-                        textile business in Malta and my uncle Cliff Vaswani’s founding of HKT in <br> 1970, we’re built on hard
+                        textile business in Malta and my uncle Cliff Vaswani’s founding of HKT in <br> 1970, we’re built
+                        on hard
                         work, exceptional service, and fine craftsmanship.
                     </p>
                 </div>
