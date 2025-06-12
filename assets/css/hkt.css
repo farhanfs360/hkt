@@ -315,7 +315,7 @@
     border: 0.534px solid #FFF;
     background: #FFF;
     backdrop-filter: blur(16.0269718170166px);
-    padding: 4.975px 6.413px 4.682px 27.512px;
+    padding: 10px 7px 10px 30px;
 }
 
 .btn-submit:hover {
@@ -762,12 +762,12 @@
 }
 
 .arrow {
-    padding: 2px;
+   padding: 0;
     background: #000;
-    width: 20px;
-    height: 20px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    color: #FFF;
+    margin-left: 15px;
 }
 
 .section-headind-red {
