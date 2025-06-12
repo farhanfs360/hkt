@@ -19,8 +19,8 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     autoplay: true,
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
+    prevArrow: $(".prevc"),
+    nextArrow: $(".nextc"),
     responsive: [
       {
         breakpoint: 1100,
@@ -55,6 +55,46 @@ $(document).ready(function () {
       // settings: "unslick"
       // instead of a settings object
     ],
+  });
+
+  //03 product slider
+
+  $(".services-grid").slick({
+    infinite: true,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
 
   //reviews slider

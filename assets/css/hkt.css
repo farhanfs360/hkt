@@ -17,7 +17,7 @@
 }
 .slide-box video {
             width: 500px;
-            height: 500px;
+            height: 550px;
             object-fit: cover;
         }
 .handpicked-hkt {
@@ -38,13 +38,31 @@
 
 }
 
+/**Brand Logos*/
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0px;
+    padding: 0px 0;
+}
+.brand-logos li img{
+    border-right:1px solid #00000020;
+    padding:0px 20px
+}
+.brand-logos li:last-child img {
+    border-right: none;
+}
+/***/
 .banner-content {
-    min-height: 200px;
+
     background-image: url('../images/hkt-form-banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px 40px;
+    padding: 40px 100px;
+    margin:0px 20px;
 }
 
 
@@ -68,10 +86,10 @@
 .offer-description {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 1.3em;
 }
 
 .offer-urgency {
@@ -161,16 +179,16 @@
 
     .banner-text {
         padding: 25px 15px;
-        text-align: center;
+        text-align: left;
     }
 
     .offer-title {
-        font-size: 18px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
 
     .offer-description {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .offer-urgency {
@@ -178,7 +196,7 @@
     }
 
     .banner-cta {
-        padding: 25px 15px;
+        padding: 10px;
     }
 
     .btn-appointment {
@@ -203,7 +221,7 @@
     }
 
     .offer-title {
-        font-size: 16px;
+        font-size: 26px;
     }
 
     .banner-text {
@@ -356,7 +374,7 @@
 .hkt-footer {
     background-color: #000;
     color: #ffffff;
-    padding: 40px 20px;
+    padding: 0px 20px;
 }
 
 .footer-logo {
