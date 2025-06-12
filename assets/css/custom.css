@@ -40,6 +40,7 @@ h2 {
 h1 span {
   color: var(--color-red-hover);
 }
+
 h2 span {
   color: var(--color-red-hover);
 }
@@ -111,7 +112,7 @@ a {
 }
 
 .mxw-75 {
-  max-width: 75%;
+  max-width: 55%;
   margin: auto;
 }
 
@@ -444,10 +445,10 @@ header .btn.btn-cta:hover i,
   border-color: var(--color-red-hover);
 }
 
-.heading-cta{
+.heading-cta {
   position: relative;
   bottom: 0;
-  text-decoration: underline ;
+  text-decoration: underline;
   text-underline-offset: 8px;
 }
 
@@ -624,9 +625,7 @@ ul.slick-nav li:hover svg {
   padding-left: 100px;
 }
 
-.post-carousel .slide-box {
-  
-}
+.post-carousel .slide-box {}
 
 .slide-content {
   width: 80%;
@@ -657,9 +656,11 @@ ul.slick-nav li:hover svg {
   color: #F2F2F2;
   font-size: 18px;
 }
+
 .slide-content img {
   width: 500px;
 }
+
 /*************  Reviews Carousel  ****************/
 .review-sec {
   padding: 80px 0px;
@@ -890,9 +891,9 @@ section.blogs-carousel {
   border-right: 1px solid #000;
 }
 
-.awd-icon  img {
+.awd-icon img {
   max-width: 100px;
- }
+}
 
 .awds .col-md-4 h4 {
   font-size: 16px;
@@ -979,6 +980,7 @@ section.blogs-carousel {
   bottom: 0;
   padding-left: 20px;
 }
+
 .chat-col {
   border-radius: 15.153px;
   border: 1.086px solid #CFCFCF;
@@ -1170,19 +1172,19 @@ ul.footer-menu li a:hover {
 }
 
 /*****/
-.promo-banner {
+.promo-banner {}
 
-}
 .promo-banner::before {
   display: none;
 }
+
 /**Custom CSS by UMAR ***/
 
 .btn-style {
   background-color: transparent;
   border: 1px solid #333;
   color: #000;
-  font-size:18px;
+  font-size: 18px;
   letter-spacing: 1px;
   padding: 8px 20px;
   transition: all 0.3s ease;
@@ -1196,11 +1198,11 @@ ul.footer-menu li a:hover {
 }
 
 .finest-txt.col-sec {
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .img-tuxedo {
@@ -1209,6 +1211,7 @@ ul.footer-menu li a:hover {
   object-fit: cover;
   border-radius: 2px;
 }
+
 .img-custom-consultation {
   width: 100%;
   height: 100%;
@@ -1222,25 +1225,25 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 991px) {
   .section-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .section-spacing {
-      margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   .order-md-first {
-      order: -1;
+    order: -1;
   }
 }
 
 @media (max-width: 767px) {
   .section-title {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .section-spacing {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1302,25 +1305,25 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 991px) {
   .shop-heading {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
   }
 
   .category-image {
-      height: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width: 767px) {
   .shop-heading {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .shop-subtitle {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .category-image {
-      height: 220px;
+    height: 220px;
   }
 }
 
@@ -1333,7 +1336,8 @@ ul.footer-menu li a:hover {
 
 .memories-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 40px auto;
+  max-width: 75%;
 }
 
 .memories-title {
@@ -1405,6 +1409,7 @@ ul.footer-menu li a:hover {
   height: 100%;
 }
 
+
 .tuxedo-image {
   position: absolute;
   background-color: #fff;
@@ -1420,15 +1425,15 @@ ul.footer-menu li a:hover {
 
 .tuxedo-image.left {
   width: 350px;
-      height:auto;
+  height: auto;
   left: 0;
-  top: 50px;
+  top: 0px;
   z-index: 1;
 }
 
 .tuxedo-image.center {
- width: 350px;
-      height:auto;
+  width: 350px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   top: 80px;
@@ -1436,10 +1441,10 @@ ul.footer-menu li a:hover {
 }
 
 .tuxedo-image.right {
- width: 350px;
-      height:auto;
+  width: 350px;
+  height: auto;
   right: 0;
-  top: 30px;
+  top: 0px;
   z-index: 1;
 }
 
@@ -1477,67 +1482,67 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 991px) {
   .tuxedo-image.left {
-      width: 220px;
-      height: 300px;
-      left: 5%;
+    width: 220px;
+    height: 300px;
+    left: 5%;
   }
 
   .tuxedo-image.center {
-      width: 220px;
-      height: 330px;
+    width: 220px;
+    height: 330px;
   }
 
   .tuxedo-image.right {
-      width: 220px;
-      height: 300px;
-      right: 5%;
+    width: 220px;
+    height: 300px;
+    right: 5%;
   }
 }
 
 @media (max-width: 767px) {
   .memories-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .slider-container {
-      height: 450px;
+    height: 450px;
   }
 
   .tuxedo-image.left {
-      width: 160px;
-      height: 220px;
-      left: 0;
+    width: 160px;
+    height: 220px;
+    left: 0;
   }
 
   .tuxedo-image.center {
-      width: 160px;
-      height: 240px;
+    width: 160px;
+    height: 240px;
   }
 
   .tuxedo-image.right {
-      width: 160px;
-      height: 220px;
-      right: 0;
+    width: 160px;
+    height: 220px;
+    right: 0;
   }
 }
 
 @media (max-width: 575px) {
   .slider-container {
-      height: 400px;
+    height: 400px;
   }
 
   .tuxedo-image.left {
-      width: 120px;
-      height: 170px;
+    width: 120px;
+    height: 170px;
   }
 
   .tuxedo-image.center {
-      width: 120px;
-      height: 190px;
+    width: 120px;
+    height: 190px;
   }
 
   .tuxedo-image.right {
-      width: 120px;
-      height: 170px;
+    width: 120px;
+    height: 170px;
   }
 }
