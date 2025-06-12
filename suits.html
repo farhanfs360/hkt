@@ -23,41 +23,54 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/hkt.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <style>
+        .fx-btns {
+            position: fixed;
+            right: 0;
+            top: 30%;
+            z-index: 9999;
+        }
 
+        .fx-btns li a img {
+            width: 60px;
+            margin: 5px 0px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="header desktop">
+<header class="header desktop">
         <div class="container">
-            <div class="row d-md-flex align-items-center">
-                <div
-                    class="col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-none d-md-none d-md-flex d-lg-flex justify-content-start">
-                    <ul class="nav">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Custom</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Collection</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+            <div class="row d-md-flex align-items-center justify-content-between">
+                <div class="col-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                     <a class="site-logo" href="/"><img src="assets/images/hkt-logo.png" alt="Logo" /></a>
                 </div>
-                <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5 text-end">
-                    <a href="" class="btn btn-cta">Schedule an appointment</a>
+
+                <div class="col-8 col-md-5 col-lg-5 col-xl-5 col-xxl-5 text-end">
+                    <a href="#cform" class="btn btn-cta">Schedule an appointment</a>
                 </div>
             </div>
         </div>
     </header>
 
     <!--- Hero Section -->
+    <div class="fx-btns">
+        <ul>
+            <li>
+                <a href="tel:+1 770-458-8682"><img src="assets/images/ct-call.png" /></a>
+            </li>
+            <li>
+                <a href="#cform"><img src="assets/images/ct-schedue.png" /></a>
+            </li>
+        </ul>
+    </div>
 
 
     <!--- Hero Section -->
-    <section class="hero-sec position-relative overflow-hidden" style="height: 100vh;" data-aos="fade-up" >
+    <section class="hero-sec position-relative overflow-hidden" style="height: 100vh;" data-aos="fade-up">
         <!-- Video Background -->
         <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
             src="./assets/images/suits-Header.png" />
@@ -159,7 +172,7 @@
 
 
 
-     
+
             </div>
 
             <!-- Slider Controls -->
@@ -222,10 +235,10 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mxw-75">
                     <h2>
-                        we take pride in our <span>craftmanship</span>
+                        Trusted by Generations <br /><span>Loved by Clients</span>
                     </h2>
                     <p class="pt-4 pb-4">
-                        Every suit is crafted with precision and care-we understand that exceptional tailoring begins
+                        Every fit is crafted with precision and care, we understand that exceptional tailoring begins
                         with listening to your story
                     </p>
                 </div>
@@ -294,97 +307,129 @@
         </div>
     </section>
 
-   <!-- From the first fitting to final -->
-   <section class="first-fitting" data-aos="fade-up">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mxw-75">
-                <h2 class="text-light">
-                    From First Fitting to Final <br />
-                    Stitch It’s All About You
-                </h2>
-                <p class="pt-4 pb-4 text-light">
-                    From first fitting to final stitch, we’re here to craft pieces that speak to<br /> your
-                    personality, your lifestyle, and your story.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <div class="container-fluid text-light" data-aos="fade-up">
-        <div class="row">
-            <div class="post-carousel">
-                <div class="slide-box">
-                    <div class="slide-content">
-                        <div><img src="assets/images/fiting-1.png" /></div>
-                        <div>
-                            <h2>01</h2>
-                        </div>
-                        <div class="side-text">
-                            <h3>Style consultation</h3>
-                            <p>
-                                We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                when and where you’ll wear it. We’ll then make recommendations about the style and
-                                look we think will meet your needs and express your individuality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide-content">
-                        <div><img src="assets/images/fiting-1.png" /></div>
-                        <div>
-                            <h2>01</h2>
-                        </div>
-                        <div class="side-text">
-                            <h3>Style consultation</h3>
-                            <p>
-                                We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                when and where you’ll wear it. We’ll then make recommendations about the style and
-                                look we think will meet your needs and express your individuality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide-content">
-                        <div><img src="assets/images/fiting-1.png" /></div>
-                        <div>
-                            <h2>02</h2>
-                        </div>
-                        <div class="side-text">
-                            <h3>Style consultation</h3>
-                            <p>
-                                We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                when and where you’ll wear it. We’ll then make recommendations about the style and
-                                look we think will meet your needs and express your individuality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide-content">
-                        <div><img src="assets/images/fiting-1.png" /></div>
-                        <div>
-                            <h2>03</h2>
-                        </div>
-                        <div class="side-text">
-                            <h3>Style consultation</h3>
-                            <p>
-                                We’ll have a relaxed chat to get to know you and discuss the garment you want, and
-                                when and where you’ll wear it. We’ll then make recommendations about the style and
-                                look we think will meet your needs and express your individuality.
-                            </p>
-                        </div>
-                    </div>
+    <!-- From the first fitting to final -->
+    <section class="first-fitting" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mxw-75">
+                    <h2 class="text-light">
+                        Every Stitch Crafted <br /> to
+                        <span class="text-"> Perfection</span>
+                    </h2>
+                    <p class="pt-4 pb-4 text-light">
+                        From first fitting to final stitch, we’re here to craft pieces that speak to your
+                        personality, your lifestyle, and your story.
+                    </p>
                 </div>
 
             </div>
         </div>
-</section>
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="post-carousel">
+                    <div class="slide-box">
+                        <div class="slide-content">
+                            <div><img src="assets/images/fiting-1.png" /></div>
+                            <div>
+                                <h2>01</h2>
+                            </div>
+                            <div class="side-text">
+                                <h3>Style consultation</h3>
+                                <p>
+                                    We’ll have a relaxed chat to get to know you and discuss the garment you want, and
+                                    when and where you’ll wear it. We’ll then make recommendations about the style and
+                                    look we think will meet your needs and express your individuality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide-content">
+                            <div>
+                                <video autoplay muted loop playsinline class="">
+                                    <source src="assets/images/hkt-shop-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <h2>02</h2>
+                            </div>
+                            <div class="side-text">
+                                <h3>Perfecting Your Fit</h3>
+                                <p>
+                                    As your garment nears completion, we tailor it to your form. We schedule one or more
+                                    fittings to ensure precision, making careful adjustments at each stage. The final
+                                    result delivers expert craftsmanship, perfect proportions, and a custom fit designed
+                                    for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-box">
+                        <div class="slide-content">
+                            <div>
+                                <video autoplay muted loop playsinline class="">
+                                    <source src="assets/images/hkt-shop-3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <h2>03</h2>
+                            </div>
+                            <div class="side-text">
+                                <h3>Tailored for moments</h3>
+                                <p>
+                                    Great style isn’t just seen, it’s felt. Whether you're stepping into a boardroom,
+                                    walking down the aisle, celebrating a milestone, or simply dressing for your own
+                                    sense of confidence, your look is thoughtfully finished and ready to embrace the
+                                    moment it was created for.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pd-r-40">
+                    <div class="blog-btn">
+                        <ul class="slk-btns">
+                            <li class="prevc slick-arrow" style="display: list-item;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12"
+                                    fill="none">
+                                    <path d="M22.3334 6.22217L0.111152 6.22217" stroke="" stroke-width="1.04167"></path>
+                                    <path d="M0.111681 6.22228C3.17993 6.22228 5.66724 8.70958 5.66724 11.7778"
+                                        stroke-width="1.04167"></path>
+                                    <path d="M5.66737 0.666613C5.66737 3.73486 3.18007 6.22217 0.111816 6.22217"
+                                        stroke-width="1.04167"></path>
+                                </svg>
+
+                            </li>
+                            <li class="nextc slick-arrow" style="display: list-item;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12"
+                                    fill="none">
+                                    <path d="M0 6.22217H22.2222" stroke="" stroke-width="1.04167"></path>
+                                    <path d="M22.2217 6.22206C19.1534 6.22206 16.6661 3.73475 16.6661 0.666504"
+                                        stroke-width="1.04167"></path>
+                                    <path d="M16.666 11.7777C16.666 8.70947 19.1533 6.22217 22.2216 6.22217"
+                                        stroke-width="1.04167"></path>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 text-center">
+                <a href="#cform" class="btn btn-cta">SCHEDULE AN APPOINTMENT</a>
+            </div>
+    </section>
 
     <!-- Handpicked  -->
-    <section class="handpicked" style="background-image: url(./assets/images/suits-4.png);" data-aos="fade-up">
+    <section class="handpicked-hkt" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8 ">
@@ -392,15 +437,28 @@
                         Finest Luxury Fabrics<span class="d-block">Handpicked for You</span>
                     </h2>
                     <p class="pt-4 pb-4">
-                        Helping people look their best and feel confident is part of my heritage. My father owned a
-                        textile and men’s clothing business on my home island of Malta, and my uncle, Cliff Vaswani,
-                        founded HKT Custom Clothiers in Atlanta in 1970.
+                        We handpick the finest fabrics from world-renowned mills to ensure that you <br> exude
+                        confidence
+                        that matches the quality of our custom-made fits and <br> enjoy true luxury in every texture,
+                        finish,
+                        and detail.
                     </p>
-                    <a href="" class="btn btn-cta dark">EXPLORE OUR MILLS</a>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="brand-logos">
+                                <li><img src="assets/images/brand-l1.png" alt="Brand 1" /></li>
+                                <li><img src="assets/images/brand-l2.png" alt="Brand 2" /></li>
+                                <li><img src="assets/images/brand-l3.png" alt="Brand 3" /></li>
+                                <li><img src="assets/images/brand-l4.png" alt="Brand 2" /></li>
+                                <li><img src="assets/images/brand-l5.png" alt="Brand 3" /></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="sp-20">
                         &nbsp;
                     </div>
-                    <img src="assets/images/suits-3.png" alt="" />
+                    <img src="assets/images/hkt-landing-sec6-2.png" alt="" />
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
 
@@ -409,351 +467,255 @@
         </div>
     </section>
 
-    <!-- Blog Carousel -->
-    <section class="blogs-carousel" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <h2>
-                        Latest from our <span>Journal</span>
-                    </h2>
-                    <div class="sp-20"></div>
-                    <a href="" class="vj">VIEW our JOURNAL</a>
-                </div>
-                <div class="col-12 col-md-5 text-end">
-                    <div class="blog-btn">
-                        <ul class="slk-btns">
-                            <li class="prevf">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12"
-                                    fill="none">
-                                    <path d="M22.3334 6.22217L0.111152 6.22217" stroke="" stroke-width="1.04167" />
-                                    <path d="M0.111681 6.22228C3.17993 6.22228 5.66724 8.70958 5.66724 11.7778"
-                                        stroke-width="1.04167" />
-                                    <path d="M5.66737 0.666613C5.66737 3.73486 3.18007 6.22217 0.111816 6.22217"
-                                        stroke-width="1.04167" />
-                                </svg>
-                                </i>
-                            </li>
-                            <li class="nextf">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12"
-                                    fill="none">
-                                    <path d="M0 6.22217H22.2222" stroke="" stroke-width="1.04167" />
-                                    <path d="M22.2217 6.22206C19.1534 6.22206 16.6661 3.73475 16.6661 0.666504"
-                                        stroke-width="1.04167" />
-                                    <path d="M16.666 11.7777C16.666 8.70947 19.1533 6.22217 22.2216 6.22217"
-                                        stroke-width="1.04167" />
-                                </svg>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="sp-20">
-                &nbsp;
-            </div>
-
-        </div>
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <div class="blog-slider">
-                        <div class="blog-slide-box">
-                            <img src="assets/images/blog-1.png" alt="" />
-                            <h3 class="pt-3">Made-to-Measure Winter Coats: What You Need to Know</h3>
-                        </div>
-                        <div class="blog-slide-box">
-                            <img src="assets/images/blog-2.png" alt="" />
-                            <h3 class="pt-3">What is the process of getting a custom suit made? </h3>
-                        </div>
-                        <div class="blog-slide-box">
-                            <img src="assets/images/blog-3.png" alt="" />
-                            <h3 class="pt-3">Relaxed Seasonal Tailoring with HKT</h3>
-                        </div>
-                        <div class="blog-slide-box">
-                            <img src="assets/images/blog-4.png" alt="" />
-                            <h3 class="pt-3">Made-to-Measure Winter Coats: What You Need to Know</h3>
-                        </div>
-                        <div class="blog-slide-box">
-                            <img src="assets/images/blog-5.png" alt="" />
-                            <h3 class="pt-3">Made-to-Measure Winter Coats: What You Need to Know</h3>
-                        </div>
 
 
-                    </div>
-                </div>
+    <!-- 3rd Last Map Section -->
+    <section class="container my-5">
+        <!-- Left Column: Address, Contact, Hours -->
+        <div class="row align-items-center gap-0">
+            <!-- Right Column: Map Image -->
 
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Last 4 Cards -->
-
-    <div class="shop-container" data-aos="fade-up">
-        <!-- Shop Custom Header -->
-        <h2>SHOP <span>CUSTOM</span></h2>
-        <p class="pt-4 pb-4">Take a journey to the award-winning mills that provide<br/> the materials for our custom garments. Our legacy.
-        </p>
-
-        <!-- Category Grid -->
-        <div class="row category-container">
-            <!-- Suits -->
-            <div class="col-6 col-md-3 category-item">
-                <a href="#" class="text-decoration-none">
-                    <img src="./assets/images/tl1.png" alt="Custom Suits" class="category-image">
-                    <h3 class="category-title">Suits</h3>
-                </a>
-            </div>
-
-            <!-- Vests -->
-            <div class="col-6 col-md-3 category-item">
-                <a href="#" class="text-decoration-none">
-                    <img src="./assets/images/tl2.png" alt="Custom Vests" class="category-image">
-                    <h3 class="category-title">Vests</h3>
-                </a>
-            </div>
-
-            <!-- Jackets -->
-            <div class="col-6 col-md-3 category-item">
-                <a href="#" class="text-decoration-none">
-                    <img src="./assets/images/tl3.png" alt="Custom Jackets" class="category-image">
-                    <h3 class="category-title">Jackets</h3>
-                </a>
-            </div>
-
-            <!-- Shirts -->
-            <div class="col-6 col-md-3 category-item">
-                <a href="#" class="text-decoration-none">
-                    <img src="./assets/images/tl4.png" alt="Custom Shirts" class="category-image">
-                    <h3 class="category-title">Shirts</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--- FAQs -->
-    <section class="faqs-home" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 pb-5">
-                    <h2>Frequently asked <span>question</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-md-9">
-                    <div class="accordion" id="faqAccordion">
-
-                        <!-- FAQ Item -->
-                        <div class="accordion-item mb-2 border rounded">
-                            <h2 class="accordion-header" id="heading1">
-                                <button
-                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                                    aria-expanded="false" aria-controls="collapse1">
-                                    How are your custom suits made?
-                                    <span class="faq-icon ms-auto"></span>
-                                </button>
-                            </h2>
-                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    All our custom suits feature full canvas construction, reflecting our unwavering
-                                    commitment to uncompromising luxury. Should you desire any specific variations,
-                                    please do not hesitate to inform our expert tailors of your special request.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repeat for other FAQs -->
-                        <div class="accordion-item mb-2 border rounded">
-                            <h2 class="accordion-header" id="heading2">
-                                <button
-                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-                                    aria-expanded="false" aria-controls="collapse2">
-                                    What is your typical time frame for a custom garment?
-                                    <span class="faq-icon ms-auto"></span>
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    The typical timeframe is 4–6 weeks depending on material and detail.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repeat for other FAQs -->
-                        <div class="accordion-item mb-2 border rounded">
-                            <h2 class="accordion-header" id="heading2">
-                                <button
-                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-                                    aria-expanded="false" aria-controls="collapse3">
-                                    What is your typical time frame for a custom garment?
-                                    <span class="faq-icon ms-auto"></span>
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    The typical timeframe is 4–6 weeks depending on material and detail.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repeat for other FAQs -->
-                        <div class="accordion-item mb-2 border rounded">
-                            <h2 class="accordion-header" id="heading2">
-                                <button
-                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                    aria-expanded="false" aria-controls="collapse4">
-                                    What is your typical time frame for a custom garment?
-                                    <span class="faq-icon ms-auto"></span>
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    The typical timeframe is 4–6 weeks depending on material and detail.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repeat for other FAQs -->
-                        <div class="accordion-item mb-2 border rounded">
-                            <h2 class="accordion-header" id="heading2">
-                                <button
-                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
-                                    aria-expanded="false" aria-controls="collapse5">
-                                    What is your typical time frame for a custom garment?
-                                    <span class="faq-icon ms-auto"></span>
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    The typical timeframe is 4–6 weeks depending on material and detail.
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 position-relative">
-                    <div class="chat-modle">
-                        <div class="chat-col">
-                            <img src="assets/images/chat-pop-icon.png" alt="" style="width: 40px;">
-                            <h3>Do you have more questions?</h3>
-                            <p>We're here to make your experience seamless—just ask, and we'll take care of the rest!
-                            </p>
-                            <a href="" class="btn btn-cta cht">Shoot a Direct Mail</a>
-                        </div>
-                        <div class="chat-btn text-end pt-3">
-                            <img src="assets/images/chat-icons.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-    </section>
-
-
-    <!--- Instagram -->
-    <section class="insta-feeds">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="d-md-flex">
-                    <img src="assets/images/ig-1.png" alt="" />
-                    <img src="assets/images/ig-2.png" alt="" />
-                    <img src="assets/images/ig-3.png" alt="" />
-                    <img src="assets/images/ig-4.png" alt="" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row text-light d-flex align-items-start pt-5 pb-5">
-                <div class="col-12 col-md-2">
-                    <h4 class="pb-3">Services</h4>
-                    <ul class="footer-menu">
-                        <li><a href="">Custom Suits</a></li>
-                        <li><a href="">Bespoke Clothing</a></li>
-                        <li><a href="">Alterations & Fittings</a></li>
-                        <li><a href="">Accecories</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h4 class="pb-3">About Us</h4>
-                    <ul class="footer-menu">
-                        <li><a href="">About HKT</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">FAQ</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-12 col-md-3">
-                    <h4 class="pb-3">Location</h4>
-                    <p>
-                        5378 Buford Hwy NE<br /> Atlanta, GA 30340, USA
+            <div class="col-md-6">
+                <div class="text-left mb-2">
+                    <h2 class="fs-1 mb-4">ATLANTA’S PREMIER CUSTOM <br> <span>SUIT DESTINATION</span></h2>
+                    <p style="font-size: 14px;">Our showroom offers a luxurious experience with convenient access from
+                        anywhere in the <br> Atlanta metro area and a short 7-minute drive from DeKalb-Peachtree
+                        Airport.
                     </p>
-                    <img src="assets/images/hkt-loc-map.png" alt="" style="width: 220px;" />
                 </div>
+                <div class="contact-details">
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                fill="none">
+                                <circle cx="17.2397" cy="17.2397" r="17.2397" fill="#A42126" />
+                                <path
+                                    d="M23.5292 15.395C23.5292 11.9039 20.699 9.07373 17.2079 9.07373C13.7169 9.07373 10.8867 11.9039 10.8867 15.395C10.8867 19.9922 17.2079 26.3134 17.2079 26.3134C17.2079 26.3134 23.5292 19.9922 23.5292 15.395Z"
+                                    stroke="white" stroke-width="1.14931" stroke-miterlimit="10"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17.2088 17.693C18.4783 17.693 19.5074 16.6638 19.5074 15.3943C19.5074 14.1248 18.4783 13.0957 17.2088 13.0957C15.9393 13.0957 14.9102 14.1248 14.9102 15.3943C14.9102 16.6638 15.9393 17.693 17.2088 17.693Z"
+                                    stroke="white" stroke-width="1.14931" stroke-miterlimit="10"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>OUR ATLANTA ADDRESS</h5>
+                            <p>5378 Buford Hwy NE, Atlanta, GA 30340</p>
+                        </div>
+                    </div>
 
-                <div class="col-12 col-md-5 ">
-                    <img src="assets/images/hkt-logo-wt.png" alt="" style="width: 110px;" />
+                    <!-- Contact Section -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                fill="none">
+                                <circle cx="17.2397" cy="17.7578" r="17.2397" fill="#A42126" />
+                                <path
+                                    d="M15.4743 19.4009C15.4743 19.4009 17.5431 21.4402 18.3855 21.6027L20.1144 19.8738C20.1144 19.8738 20.7942 19.2235 21.5183 19.8885L24.3408 22.711C24.3408 22.711 24.7989 23.5534 24.2669 24.0706L22.8926 25.4449C22.8926 25.4449 20.4691 26.9965 16.5826 24.5139C16.5826 24.5139 14.7502 23.5534 13.0508 21.8244"
+                                    stroke="white" stroke-width="0.886651" stroke-miterlimit="10" />
+                                <path
+                                    d="M15.6242 19.5489C15.6242 19.5489 13.5849 17.48 13.4075 16.6377L15.1365 14.9087C15.1365 14.9087 15.7867 14.229 15.1217 13.5049L12.2844 10.6824C12.2844 10.6824 11.4421 10.2243 10.9249 10.7563L9.5506 12.1306C9.5506 12.1306 7.99896 14.5541 10.4964 18.4406C10.4964 18.4406 11.4569 20.273 13.2006 21.9724"
+                                    stroke="white" stroke-width="0.886651" stroke-miterlimit="10" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>CONTACT US</h5>
+                            <p>Phone: <a href="tel:+17703456868">+1 (770)
+                                    345-6868</a></p>
+                            <p>Email: <a href="mailto:info@customsuitsatlanta.com">info@customsuitsatlanta.com</a></p>
+                        </div>
+                    </div>
 
-                    <div class="nws position-relative">
-                        <p>
-                            Sign up for our newsletter to get exclusive updates on new collections and special
-                            collaborations
-                        </p>
-                        <form class="email-form">
-                            <input type="email" placeholder="Your Email Address" required>
-                            <button type="submit">Submit</button>
+                    <!-- Hours Section -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36"
+                                fill="none">
+                                <circle cx="17.2397" cy="18.1093" r="17.2397" fill="#A42126" />
+                                <path
+                                    d="M17.9158 18.3218V14.2159C17.9158 13.9245 17.6793 13.688 17.3879 13.688C17.0965 13.688 16.8599 13.9245 16.8599 14.2159V18.3218C16.596 18.5047 16.332 18.8415 16.332 19.2311C16.332 19.8142 16.8048 20.2869 17.3879 20.2869C17.9709 20.2869 18.4437 19.8142 18.4437 19.2311C18.4437 18.8412 18.1797 18.5047 17.9158 18.3218Z"
+                                    fill="white" />
+                                <path
+                                    d="M16.9929 11.3125C12.6266 11.3125 9.07422 14.8648 9.07422 19.2312C9.07422 23.5976 12.6266 27.1499 16.9929 27.1499C21.3593 27.1499 24.9117 23.5976 24.9117 19.2312C24.9117 14.8648 21.3593 11.3125 16.9929 11.3125ZM16.9929 26.622C12.9177 26.622 9.60213 23.3065 9.60213 19.2312C9.60213 15.156 12.9177 11.8404 16.9929 11.8404C21.0682 11.8404 24.3837 15.156 24.3837 19.2312C24.3837 23.3065 21.0682 26.622 16.9929 26.622Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>HOURS</h5>
+                            <p>Monday - Friday: 10:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <div class="container-fluid p-0">
+            <div class="banner-content">
+                <div class="row align-items-center justify-content-end g-0">
+                    <div class="col-12 col-lg-5 col-md-4">
+                        <div class="banner-text">
+                            <h2 class="offer-title">New Client Offer</h2>
+                            <p class="offer-description">Begin your Custom journey with us, enjoy a complimentary custom
+                                shirt with your first suit purchase valued at <strong>$295.</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="banner-cta">
+                            <a href="#cform" class="btn btn-cta">Schedule an appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Main Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="appointment-heading text-center">
+                        SCHEDULE AN <span class="highlight">APPOINTMENT</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form -->
+    <section id="cform" class="contact-section overflow-hidden">
+        <div class="">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="contact-form-wrapper">
+                        <form accept-charset="UTF-8"
+                            action="https://uio475.infusionsoft.com/app/form/process/09526b22ba27bf1f1c7f02a1d5b847d6"
+                            class="infusion-form" id="inf_form_09526b22ba27bf1f1c7f02a1d5b847d6" method="POST">
+                            <input name="inf_form_xid" type="hidden" value="09526b22ba27bf1f1c7f02a1d5b847d6" />
+                            <input name="inf_form_name" type="hidden" value="Custom Suit ~br~Consultation Request" />
+                            <input name="infusionsoft_version" type="hidden" value="1.70.0.813762" />
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="from-label" for="firstName">First Name</label>
+                                    <input id="inf_field_FirstName" name="inf_field_FirstName" type="text"
+                                        class="form-control form-input" placeholder="Please enter your First Name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="from-label" for="lastName">Last Name</label>
+                                    <input id="inf_field_LastName" name="inf_field_LastName" type="text"
+                                        class="form-control form-input" placeholder="Please enter your Last Name"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="from-label" for="phoneNumber">Phone Number</label>
+                                    <input id="inf_field_Phone1" name="inf_field_Phone1" type="tel"
+                                        class="form-control form-input" placeholder="Please enter your Phone Number"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="from-label" for="email">Email Address</label>
+                                    <input id="inf_field_Email" name="inf_field_Email" type="email"
+                                        class="form-control form-input" placeholder=" Please enter your Email Address"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="from-label" for="company">I’m Interrested in*</label>
+                                <div class="form-control form-input">
+                                    <select id="inf_custom_ImInterestedInCustomSuitType"
+                                        name="inf_custom_ImInterestedInCustomSuitType" class="form-select">
+                                        <option value="">Please select one</option>
+                                        <option value="Wedding Suit">Wedding Suit</option>
+                                        <option value="Business Suit">Business Suit</option>
+                                        <option value="Travel Suit">Travel Suit</option>
+                                        <option value="Multiple Suits">Multiple Suits</option>
+                                        <option value="Other Custom Garments">Other Custom Garments</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="from-label" for="service">Additional Informaation (optional)</label>
+                                <textarea id="inf_custom_ContactUsMessage" name="inf_custom_ContactUsMessage"
+                                    class="form-control form-textarea" rows="5"
+                                    placeholder="Please write your message here."></textarea>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <button id="recaptcha_09526b22ba27bf1f1c7f02a1d5b847d6" type="submit"
+                                    class="btn btn-submit">Free Custom Consultation <span class="arrow"><img
+                                            class="arrow" src="assets/images//arrow.png" alt=""></span>
+                                </button>
+                            </div>
+
+                            <p class="disclaimer-text text-center">
+                                By submitting this form, you agree to be contacted regarding your consultation <br>
+                                request.
+                                We respect your privacy and will never share your information.
+                            </p>
                         </form>
+                        <script type="text/javascript"
+                            src="https://uio475.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+                        <script type="text/javascript"
+                            src="https://uio475.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.813762"></script>
+                        <script
+                            src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit"
+                            async="async" defer="defer"></script>
+                        <script type="text/javascript"
+                            src="https://uio475.infusionsoft.com/app/timezone/timezoneInputJs?xid=09526b22ba27bf1f1c7f02a1d5b847d6"></script>
+                        <script type="text/javascript"
+                            src="https://uio475.infusionsoft.com/js/jquery/jquery-3.3.1.js"></script>
+                        <script type="text/javascript"
+                            src="https://uio475.infusionsoft.app/app/webform/overwriteRefererJs"></script>
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container ftr-last">
-            <div class="row bdr d-md-flex d-flex align-items-center">
+    </section>
 
-                <div class="col-12 col-md-4 col-lg-4">
-                    <ul class="footer-menu tos d-flex flex-row justify-content-lg-start justify-content-center">
-                        <li><a href="">Terms</a></li>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Legal</a></li>
-                    </ul>
+    <!-- footer -->
+    <footer class="hkt-footer">
+        <div class="container-fluid px-4">
+            <!-- Main footer content -->
+            <div class="row align-items-center py-4">
+                <!-- Logo -->
+                <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center">
+                    <a class="footer-logo" href="/"><img src="assets/images/footer-logo.png" alt="Logo"
+                            class="footer-logo" /></a>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 text-center">
-                    <p class="cpr">© 2025 Copyright HKT CLOTHIERS</p>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 d-flex flex-row justify-content-lg-end justify-content-center">
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a> <!-- YouTube or video icon -->
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- Description text -->
+                <div class="col-12 col-lg-8 col-md-6 col-sm-12 mb-3 mb-md-0">
+                    <div class="footer-links">
+                        <a href="#" class="text-light">Terms & Conditions</a>
+                        <a href="#" class="text-light">Privacy Policy</a>
                     </div>
                 </div>
-            </div>
-        </div>
 
+                <!-- Our Locations -->
+                <div class="col-lg-2 col-md-3 col-sm-12 text-md-end text-center">
+                    <p>© 2025 Copyright HKT Clothiers</p>
+                </div>
+            </div>
+
+
+        </div>
     </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
