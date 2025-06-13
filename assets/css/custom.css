@@ -703,7 +703,10 @@ ul.slick-nav li:hover svg {
   justify-content: center;
   text-align: left;
 }
-
+ 
+.review-title span {
+  display: block;
+}
 .review-box .review-content p.review-text {
   margin: 30px 0px 10px;
   font-size: 18px;
