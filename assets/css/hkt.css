@@ -659,18 +659,19 @@
         padding-top: 20px;
     }
     header .btn.btn-cta, .btn.btn-cta {
-    padding: 9px;
-    background: transparent;
-    border: 1px solid #FFF;
-    color: #fff;
-    font-size: 12px;
-    width: fit-content;
-    text-transform: uppercase;
-    border-radius: 0;
-    font-weight: 500;
-    margin: 0;
-    font-family: var(--text-font-family);
-    transition: all 0.2s;
+           padding: 15px 20px;
+        background: transparent;
+        border: 1px solid #FFF;
+        color: #fff;
+        font-size: 14px;
+        width: fit-content;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: 500;
+        margin: 0;
+        font-family: var(--text-font-family);
+        transition: all 0.2s;
+        margin-top: 20px;
 }
     .landing-para {
         max-width: 100%;
@@ -790,8 +791,9 @@
     height: 430px;
     background-image: url('../images/map.png');
     /* Replace with the correct path to your image */
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-details {
