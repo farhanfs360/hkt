@@ -58,55 +58,71 @@ $(document).ready(function () {
   });
 
 
-  //mob slider for 3 images below hero slider
+// Mob slider for 3 images below hero slider
+$(".mob-list").slick({
+  infinite: true,
+  slidesToShow: 3,
+  centerMode: true,
+  centerPadding: "0px",
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: true,
+  prevArrow: $(".prevc2"),
+  nextArrow: $(".nextc2"),
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "80px",
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "70px",
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "70px",
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
-  $(".mob-list").slick({
-    infinite: true,
-    slidesToShow: 1,
-    centerMode: true,
-    centerPadding: "160px",
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-    prevArrow: $(".prevc2"),
-    nextArrow: $(".nextc2"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "80px",
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "70px",
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "70px",
-          slidesToScroll: 1,
-        },
-      },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ],
-  });
-  //03 product slider
+// Initialize slide counter
+$(".mob-list").on("init reInit afterChange", function (event, slick, currentSlide) {
+  // Get the current slide index (add 1 since index is 0-based)
+  var current = (currentSlide ? currentSlide : 0) + 1;
+  // Get the total number of slides
+  var total = slick.slideCount;
+  // Update the slide counter text
+  $(".slide-counter").text(current + "/" + total);
+});
+
+// Bind counter arrows to slider navigation
+$(".counter-prev").on("click", function () {
+  $(".mob-list").slick("slickPrev");
+});
+
+$(".counter-next").on("click", function () {
+  $(".mob-list").slick("slickNext");
+});
+
+//03 product slider
 
   $(".services-grid").slick({
     infinite: true,

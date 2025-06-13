@@ -26,7 +26,7 @@
     background-image: url(../images//hkt-landing-sec6.jpg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 30%;
+    background-size: 34%;
 
 }
 
@@ -974,4 +974,38 @@
     font-size: 26px;
     font-weight: 700;
     margin-top: 10px;
+
+}
+    /* CSS for styling the counter and arrows */
+.slider-controls {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    transform: translate(0px, -40px);
+}
+
+.slide-counter {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin: 0 15px;
+}
+
+.counter-prev, .counter-next {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.counter-prev:hover, .counter-next:hover {
+  color: #007bff;
+}
+
+.counter-prev span, .counter-next span {
+  display: inline-block;
 }

@@ -136,12 +136,12 @@
 
   .slide-content img {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 
   .slide-box video {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -157,11 +157,11 @@
   }
 
   .slide-content h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .slide-content p {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .at-hkt-clt .text-left {

@@ -26,26 +26,23 @@
     <link href="assets/css/hkt.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
-      <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JHR052TTC5"
-    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHR052TTC5"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-JHR052TTC5");
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-JHR052TTC5");
     </script>
     <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "rydtfi8x0i");
-</script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "rydtfi8x0i");
+    </script>
 
 </head>
 
@@ -176,75 +173,38 @@
             <a href="#cform" class="btn btn-cta dark">SCHEDULE AN APPOINTMENT</a>
         </div>
 
-        <!-- Slider Section -->
-        <div class="slider-container">
-            <div class="slider" id="tuxedoSlider">
-                <!-- Slide 1 -->
-                <div class="slide active" data-slide="1">
-                    <div class="image-container">
-                        <div class="tuxedo-image left">
-                            <img src="./assets/images/ssm1.png" alt="Black Tuxedo with Boutonniere">
-                        </div>
-                        <div class="tuxedo-image center">
-                            <img src="./assets/images/ssm2.png" alt="Navy Blue Tuxedo">
-                        </div>
-                        <div class="tuxedo-image right">
-                            <img src="./assets/images/ssm3.png" alt="Formal Tuxedo with Cufflinks">
-                        </div>
-                    </div>
+        <!--- Mob slider --->
+        <div class="mob-list-image">
+            <div class="mob-list">
+                <div class="">
+                    <img src="./assets/images/ssm1.png" alt="Black Tuxedo with Boutonniere">
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="slide" data-slide="2">
-                   <div class="image-container">
-                        <div class="tuxedo-image left">
-                            <img src="./assets/images/ssm4.png" alt="Black Tuxedo with Boutonniere">
-                        </div>
-                        <div class="tuxedo-image center">
-                            <img src="./assets/images/ssm5.png" alt="Navy Blue Tuxedo">
-                        </div>
-                        <div class="tuxedo-image right">
-                            <img src="./assets/images/ssm6.png" alt="Formal Tuxedo with Cufflinks">
-                        </div>
-                    </div>
+                <div class="">
+                    <img src="./assets/images/ssm2.png" alt="Navy Blue Tuxedo">
                 </div>
-            </div>
-
-            <!-- Slider Controls -->
-            <div class="slider-controls">
-                <div class="slider-pagination">
-                    <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
+                <div class="">
+                    <img src="./assets/images/ssm3.png" alt="Formal Tuxedo with Cufflinks">
                 </div>
-                <div class="slider-nav">
-                    <button class="slider-btn" id="prevBtn">&larr;</button>
-                    <button class="slider-btn" id="nextBtn">&rarr;</button>
+                <div class="">
+                    <img src="./assets/images/ssm4.png" alt="Black Tuxedo with Boutonniere">
+                </div>
+                <div class="">
+                    <img src="./assets/images/ssm5.png" alt="Navy Blue Tuxedo">
+                </div>
+                <div class="">
+                    <img src="./assets/images/ssm6.png" alt="Formal Tuxedo with Cufflinks">
                 </div>
             </div>
         </div>
+        <!-- HTML for slide counter with arrows -->
+        <div class="slider-controls">
+            <button class="counter-prev"><span>&larr;</span></button>
+            <div class="slide-counter">1/3</div>
+            <button class="counter-next"><span>&rarr;</span></button>
+        </div>
+        <!--- end -->
     </div>
-<!--- Mob slider --->
-<div class="mob-list-image">
-    <div class="mob-list">
-        <div class="">
-            <img src="./assets/images/ssm1.png" alt="Black Tuxedo with Boutonniere">
-        </div>
-        <div class="">
-            <img src="./assets/images/ssm2.png" alt="Navy Blue Tuxedo">
-        </div>
-        <div class="">
-            <img src="./assets/images/ssm3.png" alt="Formal Tuxedo with Cufflinks">
-        </div>
-        <div class="">
-            <img src="./assets/images/ssm4.png" alt="Black Tuxedo with Boutonniere">
-        </div>
-        <div class="">
-            <img src="./assets/images/ssm5.png" alt="Navy Blue Tuxedo">
-        </div>
-        <div class="">
-            <img src="./assets/images/ssm6.png" alt="Formal Tuxedo with Cufflinks">
-        </div>
-    </div>
-</div>
+
 
     <!-- Section 3 -->
     <div class="container" data-aos="fade-up">
@@ -379,7 +339,7 @@
         </div>
     </section>
 
-   <!-- From the first fitting to final -->
+    <!-- From the first fitting to final -->
     <section class="first-fitting" data-aos="fade-up">
         <div class="container">
             <div class="row">
@@ -516,7 +476,7 @@
                             </ul>
                         </div>
                     </div>
-                     <div class="col-12 no-desktop">
+                    <div class="col-12 no-desktop">
                         <div class="py-3 text-center">
                             <a href="#cform" class="btn btn-cta">SCHEDULE AN APPOINTMENT</a>
                         </div>
@@ -565,18 +525,19 @@
         </div>
     </section>
 
-<style>
-    .handpicked-hkt {
-        background-image: url(assets/images/shirt-lux-1.png);
-    }
-    @media (max-width:992px) {
-         .handpicked-hkt {
-        background-image: none;
-    }
-    }
-</style>
+    <style>
+        .handpicked-hkt {
+            background-image: url(assets/images/shirt-lux-1.png);
+        }
 
-        <!-- 3rd Last Map Section - for DESKTOP-->
+        @media (max-width:992px) {
+            .handpicked-hkt {
+                background-image: none;
+            }
+        }
+    </style>
+
+    <!-- 3rd Last Map Section - for DESKTOP-->
     <section class="container my-5 desktop-map-section">
         <!-- Left Column: Address, Contact, Hours -->
         <div class="row align-items-center gap-0">
@@ -663,7 +624,7 @@
         </div>
     </section>
 
-        <!-- 3rd Last Map Section - for MOBILE-->
+    <!-- 3rd Last Map Section - for MOBILE-->
     <section class="container my-5 mobile-map-section">
         <!-- Left Column: Address, Contact, Hours -->
         <div class="row align-items-center gap-0">
@@ -746,7 +707,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                
+
             </div>
         </div>
     </section>
