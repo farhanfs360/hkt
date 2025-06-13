@@ -131,13 +131,17 @@ $(document).ready(function () {
 
   $(".services-grid").slick({
     infinite: true,
+     autoplay: true,
+    autoplaySpeed: 1500,
     slidesToShow: 3,
     centerMode: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     centerPadding: "0px",
     slidesToScroll: 1,
     arrows: true,
     dots: false,
-    autoplay: true,
+
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
     responsive: [
