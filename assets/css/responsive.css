@@ -7,13 +7,16 @@
 /* Extra small devices (phones, 1024px and down) */
 
 @media only screen and (max-width: 992px) {
-   .hkt-footer .text-center.text-md-end {
+  .hkt-footer .text-center.text-md-end {
     margin: 10px 0px;
     border-top: 1px solid #646464;
     padding-top: 15px;
 
-   }
-      
+  }
+
+  .slide-content h2 {
+    font-size: 60px;
+  }
 
 
   .slk-btns .prev svg,
@@ -181,8 +184,8 @@
   }
 
   .no-desktop {
-  display: block;
-}
+    display: block;
+  }
 
   .hero-sec {
     padding: 30px 0px 30px;
