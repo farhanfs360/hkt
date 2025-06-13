@@ -378,10 +378,8 @@
 }
 
 .footer-logo {
-    width: 124px;
-    height: 93.333px;
-    flex-shrink: 0;
-    aspect-ratio: 124.00/93.33;
+   width: 100px;
+    height: auto;
 }
 
 .footer-description {

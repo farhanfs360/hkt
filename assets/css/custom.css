@@ -115,6 +115,9 @@ a {
   max-width: 55%;
   margin: auto;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   outline: none;
@@ -321,6 +324,19 @@ header.darkHeader ul.nav li a:after {
   margin: 30px 0px 100px;
 }
 
+/*****/
+
+ .fx-btns {
+            position: fixed;
+            right: 0;
+            top: 30%;
+            z-index: 9999;
+        }
+
+        .fx-btns li a img {
+            width: 60px;
+            margin: 5px 0px;
+        }
 /* ==== Button CTA ==== */
 
 header .btn.btn-cta,
@@ -454,6 +470,10 @@ header .btn.btn-cta:hover i,
 
 
 /* ==== POST Sections ==== */
+ .mob-list-image .slick-slide.slick-current.slick-active.slick-center {
+            transform: translate(0px, 30px);
+            transition: transform 0.3s ease;
+        }
 
 ul.slick-nav {
   display: flex;
@@ -467,7 +487,6 @@ ul.slick-nav li {
 }
 
 ul.slick-nav li.prev {
-  margin-right: 20px;
 }
 
 ul.slick-nav li svg {
@@ -1178,7 +1197,17 @@ ul.footer-menu li a:hover {
   display: none;
 }
 
-/**Custom CSS by UMAR ***/
+/*****************************/
+.mob-list-image {
+  display: none;
+  padding-bottom: 90px;
+}
+
+.mobile-map-section { 
+  display: none;
+}
+
+/***********************************************************Custom CSS by UMAR ***/
 
 .btn-style {
   background-color: transparent;
@@ -1481,6 +1510,10 @@ ul.footer-menu li a:hover {
 }
 
 @media (max-width: 991px) {
+  .fx-btns li a img {
+            width: 30px;
+            margin: 5px 0px;
+        }
   .tuxedo-image.left {
     width: 220px;
     height: 300px;
