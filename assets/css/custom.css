@@ -115,6 +115,7 @@ a {
   max-width: 55%;
   margin: auto;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -326,17 +327,18 @@ header.darkHeader ul.nav li a:after {
 
 /*****/
 
- .fx-btns {
-            position: fixed;
-            right: 0;
-            top: 30%;
-            z-index: 9999;
-        }
+.fx-btns {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  z-index: 9999;
+}
 
-        .fx-btns li a img {
-            width: 60px;
-            margin: 5px 0px;
-        }
+.fx-btns li a img {
+  width: 60px;
+  margin: 5px 0px;
+}
+
 /* ==== Button CTA ==== */
 
 header .btn.btn-cta,
@@ -470,10 +472,14 @@ header .btn.btn-cta:hover i,
 
 
 /* ==== POST Sections ==== */
- .mob-list-image .slick-slide.slick-current.slick-active.slick-center {
-            transform: translate(0px, 30px);
-            transition: transform 0.3s ease;
-        }
+.mob-list-image .slick-slide.slick-current.slick-active.slick-center {
+  transform: translate(0px, 60px);
+  transition: transform 0.3s ease;
+}
+
+.mob-list-image .slick-slide.slick-current.slick-active.slick-center img {
+  padding-bottom: 100px;
+}
 
 ul.slick-nav {
   display: flex;
@@ -486,8 +492,7 @@ ul.slick-nav li {
   cursor: pointer;
 }
 
-ul.slick-nav li.prev {
-}
+ul.slick-nav li.prev {}
 
 ul.slick-nav li svg {
   fill: #5f5f5f;
@@ -700,8 +705,9 @@ ul.slick-nav li:hover svg {
 }
 
 .review-box .review-content p.review-text {
-  margin: 30px 0px 40px;
+  margin: 30px 0px 10px;
   font-size: 18px;
+  min-height: 290px;
 }
 
 .review-box .review-content p.review-title {
@@ -1199,18 +1205,18 @@ ul.footer-menu li a:hover {
 
 /*****************************/
 .mob-list-image {
-  display: none;
-  padding-bottom: 90px;
+  display: block;
+  padding-bottom: 0px;
 }
 
-.mobile-map-section { 
+.mobile-map-section {
   display: none;
 }
 
-.cft-content  {
-    display: flex;
-    gap: 60px;
-    align-items: center;
+.cft-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
 }
 
 .no-desktop {
@@ -1521,9 +1527,10 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 991px) {
   .fx-btns li a img {
-            width: 45px;
-            margin: 5px 0px;
-        }
+    width: 45px;
+    margin: 5px 0px;
+  }
+
   .tuxedo-image.left {
     width: 220px;
     height: 300px;
