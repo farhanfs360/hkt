@@ -7,6 +7,14 @@
 /* Extra small devices (phones, 1024px and down) */
 
 @media only screen and (max-width: 992px) {
+   .hkt-footer .text-center.text-md-end {
+    margin: 10px 0px;
+    border-top: 1px solid #646464;
+    padding-top: 15px;
+
+   }
+      
+
 
   .slk-btns .prev svg,
   .slk-btns .next svg,
@@ -35,7 +43,7 @@
   }
 
   .footer-links a {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .memories-header {
