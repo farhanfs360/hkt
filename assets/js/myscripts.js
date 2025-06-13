@@ -13,6 +13,8 @@ $(document).ready(function () {
   $(".post-carousel").slick({
     infinite: true,
     slidesToShow: 1,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     centerMode: true,
     centerPadding: "160px",
     slidesToScroll: 1,
@@ -58,71 +60,74 @@ $(document).ready(function () {
   });
 
 
-// Mob slider for 3 images below hero slider
-$(".mob-list").slick({
-  infinite: true,
-  slidesToShow: 3,
-  centerMode: true,
-  centerPadding: "0px",
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  autoplay: true,
-  prevArrow: $(".prevc2"),
-  nextArrow: $(".nextc2"),
-  responsive: [
-    {
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: "80px",
-        infinite: true,
-        dots: true,
+  // Mob slider for 3 images below hero slider
+  $(".mob-list").slick({
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    arrows: true,
+    dots: false,
+    prevArrow: $(".prevc2"),
+    nextArrow: $(".nextc2"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "80px",
+          infinite: true,
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: "70px",
-        slidesToScroll: 1,
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "70px",
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: "70px",
-        slidesToScroll: 1,
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "70px",
+          slidesToScroll: 1,
+        },
       },
-    },
-  ],
-});
+    ],
+  });
 
-// Initialize slide counter
-$(".mob-list").on("init reInit afterChange", function (event, slick, currentSlide) {
-  // Get the current slide index (add 1 since index is 0-based)
-  var current = (currentSlide ? currentSlide : 0) + 1;
-  // Get the total number of slides
-  var total = slick.slideCount;
-  // Update the slide counter text
-  $(".slide-counter").text(current + "/" + total);
-});
+  // Initialize slide counter
+  $(".mob-list").on("init reInit afterChange", function (event, slick, currentSlide) {
+    // Get the current slide index (add 1 since index is 0-based)
+    var current = (currentSlide ? currentSlide : 0) + 1;
+    // Get the total number of slides
+    var total = slick.slideCount;
+    // Update the slide counter text
+    $(".slide-counter").text(current + "/" + total);
+  });
 
-// Bind counter arrows to slider navigation
-$(".counter-prev").on("click", function () {
-  $(".mob-list").slick("slickPrev");
-});
+  // Bind counter arrows to slider navigation
+  $(".counter-prev").on("click", function () {
+    $(".mob-list").slick("slickPrev");
+  });
 
-$(".counter-next").on("click", function () {
-  $(".mob-list").slick("slickNext");
-});
+  $(".counter-next").on("click", function () {
+    $(".mob-list").slick("slickNext");
+  });
 
-//03 product slider
+  //03 product slider
 
   $(".services-grid").slick({
     infinite: true,
@@ -170,6 +175,8 @@ $(".counter-next").on("click", function () {
     centerPadding: "0px",
     slidesToScroll: 1,
     arrows: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     dots: false,
     autoplay: true,
     prevArrow: $(".prev"),
@@ -202,7 +209,7 @@ $(".counter-next").on("click", function () {
   });
 
   // Update navigation on slide change
-  $('.reviews-carousel').on('afterChange', function(event, slick, currentSlide){
+  $('.reviews-carousel').on('afterChange', function (event, slick, currentSlide) {
     var totalSlides = slick.slideCount;
     var currentSlideNum = currentSlide + 1;
 
@@ -219,7 +226,7 @@ $(".counter-next").on("click", function () {
   });
 
   // Initialize navigation on load
-  $('.reviews-carousel').on('init', function(event, slick){
+  $('.reviews-carousel').on('init', function (event, slick) {
     var totalSlides = slick.slideCount;
     $('.total-slides').text(('0' + totalSlides).slice(-2));
     // Set initial progress (first slide)
@@ -230,7 +237,7 @@ $(".counter-next").on("click", function () {
     $('.progress').css('width', progress + '%');
   });
 
-        //end of review slider
+  //end of review slider
   //BLOG HOME SLIDER
   $('.blog-slider').slick({
     centerMode: true,
@@ -266,33 +273,33 @@ $(".counter-next").on("click", function () {
   // END
 
   //
-/*
-  $(document).ready(function () {
-    var $slider = $(".fbd-slider");
-    var $progressBar = $(".progress");
-    var $progressBarLabel = $(".slider__label");
-
-    $slider.on(
-      "beforeChange",
-      function (event, slick, currentSlide, nextSlide) {
-        var calc = (nextSlide / (slick.slideCount - 1)) * 100;
-        var calc2 = calc + 10;
-
-        $progressBar
-          .css("background-size", calc2 + "% 100%")
-          .attr("aria-valuenow", calc2);
-
-        $progressBarLabel.text(calc2 + "% completed");
-      }
-    );
-
-    $slider.slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      speed: 400,
+  /*
+    $(document).ready(function () {
+      var $slider = $(".fbd-slider");
+      var $progressBar = $(".progress");
+      var $progressBarLabel = $(".slider__label");
+  
+      $slider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+          var calc2 = calc + 10;
+  
+          $progressBar
+            .css("background-size", calc2 + "% 100%")
+            .attr("aria-valuenow", calc2);
+  
+          $progressBarLabel.text(calc2 + "% completed");
+        }
+      );
+  
+      $slider.slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 400,
+      });
     });
-  });
-*/
+  */
   //
 
 
