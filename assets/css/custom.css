@@ -453,6 +453,7 @@ header .btn.btn-cta:hover i,
   margin: auto;
   left: 0;
   right: 0;
+  display: none;
 }
 
 .hero-btn a {
