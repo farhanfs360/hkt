@@ -733,6 +733,9 @@
         padding: 15px 10px;
         font-size: 13px;
     }
+    .footer-logo {
+        width: 60px;
+    }
     .services-title {
         font-size: 24px;
     }
