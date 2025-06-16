@@ -85,9 +85,9 @@
     padding: 180px 20px 30px;
   }
 
-  .brand-logos li img {
+  .brand-logos li {
     border-right: 1px solid #00000020;
-    padding: 0px 10px;
+    padding: 0px 5px;
   }
 
   .at-hkt-clt {
