@@ -116,6 +116,10 @@ a {
   margin: auto;
 }
 
+.mxw-68 {
+  max-width: 68%;
+}
+
 html {
   overflow-x: hidden;
 }

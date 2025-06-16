@@ -1,21 +1,30 @@
-@media (min-width: 1400px) {
-  .container {
-    /*max-width: 1536px; */
+@media (max-width: 1600px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  .mxw-68 {
+    max-width: 94%
   }
 }
 
 /* Extra small devices (phones, 1024px and down) */
 
 @media only screen and (max-width: 992px) {
+  .mxw-68 {
+    max-width: 100%
+  }
+
   .hkt-footer .text-center.text-md-end {
     margin: 10px 0px;
     border-top: 1px solid #646464;
     padding-top: 15px;
 
   }
+
   .first-fitting .slk-btns {
     margin-right: 40px;
-}
+  }
 
   .slide-content h2 {
     font-size: 60px;
