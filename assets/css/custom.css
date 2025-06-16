@@ -329,6 +329,10 @@ header.darkHeader ul.nav li a:after {
   margin: 30px 0px 100px;
 }
 
+
+.offer-description strong {
+  font-weight: normal !important;
+}
 /*****/
 
 .fx-btns {
