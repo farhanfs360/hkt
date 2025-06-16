@@ -52,7 +52,7 @@
 
 .brand-logos li  {
     border-right: 1px solid #00000020;
-    padding-right:20px;
+    padding:0px 10px;
 }
 
 .brand-logos li:last-child {
@@ -216,6 +216,9 @@
 }
 
 @media (max-width: 576px) {
+    h2 {
+        font-size: 20px !important;
+    }
     .appointment-section {
         padding: 40px 0;
     }
