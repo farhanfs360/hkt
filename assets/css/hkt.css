@@ -43,19 +43,19 @@
 /**Brand Logos*/
 .brand-logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     gap: 0px;
     padding: 0px 0;
 }
 
-.brand-logos li img {
+.brand-logos li  {
     border-right: 1px solid #00000020;
-    padding: 0px 20px
+    padding-right:20px;
 }
 
-.brand-logos li:last-child img {
+.brand-logos li:last-child {
     border-right: none;
 }
 
