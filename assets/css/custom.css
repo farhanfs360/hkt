@@ -651,6 +651,10 @@ ul.slick-nav li:hover svg {
 
 .post-carousel .slide-box {}
 
+.first-fitting .slk-btns {
+  margin-right: 80px;
+}
+
 .slide-content {
   width: 80%;
   display: flex;
@@ -682,7 +686,9 @@ ul.slick-nav li:hover svg {
 }
 
 .slide-content img {
-  width: 500px;
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
 }
 
 /*************  Reviews Carousel  ****************/
