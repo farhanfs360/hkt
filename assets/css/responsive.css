@@ -1,6 +1,6 @@
-@media (max-width: 1400px) {
+@media (max-width: 1220px) {
   h2 {
-    font-size: 33px;
+    font-size: 28px;
   }
 
   .mxw-68 {
@@ -8,7 +8,7 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 993px) and (max-width: 1221px) { 
   h2 {
     font-size: 35px;
   }
