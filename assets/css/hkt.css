@@ -856,8 +856,16 @@
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin-bottom: -5px !important;
+}
+
+.contact-item .icon {
+        transform: translate(0px, 10px);
 }
 
 .slick-prev,
