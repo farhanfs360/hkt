@@ -131,7 +131,7 @@ $(document).ready(function () {
 
   $(".services-grid").slick({
     infinite: true,
-     autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     slidesToShow: 3,
     centerMode: true,
@@ -341,6 +341,20 @@ $(document).ready(function () {
   });
 
   AOS.init();
+
+
+
 }); // end of function
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const mapImg = document.querySelector(".map-container1 img");
+  if (mapImg) {
+    mapImg.style.cursor = "pointer";
+    mapImg.addEventListener("click", function () {
+      window.open("https://maps.app.goo.gl/a4NXi3vbsMG71rKd8", "_blank");
+    });
+  }
+});
 
 
