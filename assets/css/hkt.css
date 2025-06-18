@@ -48,6 +48,7 @@
     flex-wrap: nowrap;
     gap: 0px;
     padding: 0px 0;
+    margin: 0 0px 0px -12px;
 }
 
 .brand-logos li  {
@@ -833,7 +834,6 @@
 }
 
 .contact-details h5 {
-    font-weight: bold;
     font-size: 18px;
     margin-top: 15px;
     color: #A42126;

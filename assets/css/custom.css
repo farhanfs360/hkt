@@ -438,6 +438,7 @@ header .btn.btn-cta:hover i,
   text-transform: uppercase;
   margin-bottom: 15px;
   display: block;
+  font-weight: 200;
 }
 
 .hero-content h1 {
