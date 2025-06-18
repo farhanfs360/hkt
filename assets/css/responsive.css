@@ -5,7 +5,10 @@ margin:0px 15px;
 }
 }
 
-@media (min-width: 993px) and (max-width: 1366px) { 
+@media (min-width: 993px) and (max-width: 1366px) {
+  h1 {
+    font-size: 40px
+  } 
   h2 {
     font-size: 28px;
   }
