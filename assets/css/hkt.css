@@ -80,22 +80,25 @@
 }
 
 .offer-title {
-    color: #FFF;
-    font-family: "Canela Trial";
+       color: #FFF;
     font-size: 38px;
-    font-style: normal;
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .offer-description {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.3em;
+}
+.offer-description small {
+    display: block;
+    font-size: 17px;
 }
 
 .offer-urgency {
@@ -856,8 +859,16 @@
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin-bottom: -5px !important;
+}
+
+.contact-item .icon {
+        transform: translate(0px, 10px);
 }
 
 .slick-prev,
