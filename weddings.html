@@ -150,7 +150,21 @@
 }
 </script>
 
+    <style>
+        .services-grid {
+            margin-top: 0px;
+        }
 
+        .custom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            padding: 0;
+            margin: 0 auto;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -158,7 +172,16 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBCLKN5N" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    <section class="top-bar">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-12">
+                    <p class="text-center text-light p-0 m-0">
+                        Begin your Custom journey with us, enjoy a complimentary custom shirt with your first suit
+                        purchase valued up to <strong>$295.</strong>
+                    </p>
+                </div>
+    </section>
     <header class="header desktop">
         <div class="container">
             <div class="row d-md-flex align-items-center justify-content-between">
@@ -282,12 +305,59 @@
                 of the styles and moments that inspire the kind of work we strive to create, brought together with care
                 and intention
             </p>
-            <a href="#cform" class="btn btn-cta dark">SCHEDULE AN APPOINTMENT</a>
+
         </div>
 
         <!-- Slider Section -->
+        <div class="container no-mob">
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="hktp-accordion">
+                        <div class="hktp-accordion-item active" data-image="wed-1">
+                            <div class="hktp-accordion-header">Custom Wedding Suits</div>
+                            <div class="hktp-accordion-content">
+                                Sophisticated tailoring for a flawless and memorable look
+                            </div>
+                        </div>
+                        <div class="hktp-accordion-item" data-image="wed-2">
+                            <div class="hktp-accordion-header">Custom Wedding Tuxedos</div>
+                            <div class="hktp-accordion-content">
+                                Ideal cut & perfect fit for your special day
+                            </div>
+                        </div>
+                        <div class="hktp-accordion-item" data-image="wed-3">
+                            <div class="hktp-accordion-header">Custom Wedding Vests</div>
+                            <div class="hktp-accordion-content">
+                                Genuine Leather, premium fit, paving your way to the aisle
+                            </div>
+                        </div>
+                        <div class="hktp-accordion-item" data-image="wed-4">
+                            <div class="hktp-accordion-header">Custom Wedding Shirts</div>
+                            <div class="hktp-accordion-content">
+                                Crisp tailoring for a sharp, effortless impression that lasts all day 
+                            </div>
+                        </div>
+                        <div class="hktp-accordion-item" data-image="wed-5">
+                            <div class="hktp-accordion-header">Custom Wedding Accessories</div>
+                            <div class="hktp-accordion-content">
+                                Refined details that complete your look and leave a lasting impression 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img class="wed-image wed-1 active" src="assets/images/cws-img-1.png" alt="Custom Wedding Suits" />
+                    <img class="wed-image wed-2" src="assets/images/cws-img-2.png" alt="Custom Wedding Tuxedos" />
+                    <img class="wed-image wed-3" src="assets/images/cws-img-1.png" alt="Custom Wedding Vests" />
+                    <img class="wed-image wed-4" src="assets/images/cws-img-2.png" alt="Custom Wedding Shirts" />
+                    <img class="wed-image wed-5" src="assets/images/cws-img-1.png" alt="Custom Wedding Accessories" />
+                    <div class="sp-20">&nbsp;</div>
+                    <a href="#cform" class="btn btn-cta dark">Schedule AN APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
         <!--- Mob slider --->
-        <div class="mob-list-image">
+        <div class="mob-list-image d-none">
             <div class="mob-list">
                 <div class="">
                     <img src="./assets/images/wedding-1.png" alt="Black Tuxedo with Boutonniere">
@@ -310,14 +380,104 @@
             </div>
         </div>
         <!-- HTML for slide counter with arrows -->
-        <div class="slider-controls">
+        <div class="slider-controls d-none">
             <button class="counter-prev"><span>&larr;</span></button>
             <div class="slide-counter">1/3</div>
             <button class="counter-next"><span>&rarr;</span></button>
         </div>
         <!--- end -->
+        <!-- mobile slider-->
+        <!-- Services Grid -->
+        <div class="no-desktop">
+            <div class="row services-grid">
+
+                <!-- Service 1: Suits -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/images/cws-img-1.png" alt="Elegant black suit" class="img-fluid">
+                            <div class="service-content-bottom">
+                                <h3 class="service-title">Custom Wedding Suits</h3>
+                                <p class="service-text">Sophisticated tailoring for a flawless and memorable look</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Tuxedos -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/images/cws-img-2.png" alt="Formal tuxedo with bow tie" class="img-fluid">
+                            <div class="service-content-bottom">
+                                <h3 class="service-title">Custom Wedding Tuxedos</h3>
+                                <p class="service-text">Ideal cut & perfect fit for your special day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Jackets -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/images/cws-img-3.png" alt="Casual blazer jacket" class="img-fluid">
+                            <div class="service-content-bottom">
+                                <h3 class="service-title">Custom Wedding Vests</h3>
+                                <p class="service-text">Genuine Leather, premium fit, paving your way to the aisle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4: Jackets -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/images/cws-img-4.png" alt="Casual blazer jacket" class="img-fluid">
+                            <div class="service-content-bottom">
+                                <h3 class="service-title">Custom Wedding Shirts</h3>
+                                <p class="service-text">Crisp tailoring for a sharp, effortless impression that lasts
+                                    all
+                                    day </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5: Jackets -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/images/cws-img-5.png" alt="Casual blazer jacket" class="img-fluid">
+                            <div class="service-content-bottom">
+                                <h3 class="service-title">Custom Wedding Accessories</h3>
+                                <p class="service-text">Refined details that complete your look and leave a lasting
+                                    impression </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+
+
+
+            </div>
+
+
+            <!-- slider scale nav -->
+            <div class="custom-nav">
+                <span class="slide-number current-slide1">01</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+                <span class="slide-number total-slides1">05</span>
+            </div>
+
+            <!-- mobile slider ended -->
+        </div>
     </div>
 
+
+    <div class="sp-40">&nbsp;</div>
 
     <!-- Section 3 -->
     <div class="container" data-aos="fade-up">
@@ -877,30 +1037,6 @@
     </section>
 
 
-    <section class="promo-banner">
-        <div class="container-fluid p-0">
-            <div class="banner-content">
-                <div class="row align-items-center justify-content-end g-0">
-                    <div class="col-12 col-lg-5 col-md-4">
-                        <div class="banner-text">
-                            <h2 class="offer-title">New Client Offer</h2>
-                           <p class="offer-description">Begin your Custom journey with us, enjoy a complimentary custom
-                                shirt with your first suit purchase <small>Custom Shirt valued up to
-                                    $295</small></p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-3">
-                        <div class="banner-cta">
-                            <a href="#cform" class="btn btn-cta">Schedule an appointment</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
     <!-- Main Appointment Section -->
     <section class="appointment-section">
         <div class="container">
@@ -918,95 +1054,12 @@
     <section id="cform" class="contact-section overflow-hidden">
         <div class="">
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10">
+                <div class="col-lg-11 col-md-11">
                     <div class="contact-form-wrapper">
-                        <form accept-charset="UTF-8"
-                            action="https://uio475.infusionsoft.com/app/form/process/375089833bb07c8020d0cfdf959d6709"
-                            class="infusion-form" id="inf_form_375089833bb07c8020d0cfdf959d6709" method="POST">
-                            <input name="inf_form_xid" type="hidden" value="375089833bb07c8020d0cfdf959d6709" />
-                            <input name="inf_form_name" type="hidden"
-                                value="The Wedding Edit &#xa;Consultation Request" />
-                            <input name="infusionsoft_version" type="hidden" value="1.70.0.815907" />
-
-                            <div class="row mb-3">
-                                <div class="col-md-6 mb-3 mb-md-0">
-                                    <label class="from-label" for="firstName">First Name</label>
-                                    <input id="inf_field_FirstName" name="inf_field_FirstName" type="text"
-                                        class="form-control form-input" placeholder="Please enter your First Name"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="from-label" for="lastName">Last Name</label>
-                                    <input id="inf_field_LastName" name="inf_field_LastName" type="text"
-                                        class="form-control form-input" placeholder="Please enter your Last Name"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="row mb-3">
-                                <div class="col-md-6 mb-3 mb-md-0">
-                                    <label class="from-label" for="phoneNumber">Phone Number</label>
-                                    <input id="inf_field_Phone1" name="inf_field_Phone1" type="tel"
-                                        class="form-control form-input" placeholder="Please enter your Phone Number"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="from-label" for="email">Email Address</label>
-                                    <input id="inf_field_Email" name="inf_field_Email" type="email"
-                                        class="form-control form-input" placeholder=" Please enter your Email Address"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="from-label" for="company">I’m Interrested in*</label>
-                                <div class="form-control form-input">
-                                    <select id="inf_custom_WeddingWhatistheoccasionforyourgarment"
-                                        name="inf_custom_WeddingWhatistheoccasionforyourgarment" class="form-select"
-                                        required>
-                                        <option value="">Please select one</option>
-                                        <option value="Wedding (Groom)">Wedding (Groom)</option>
-                                        <option value="Wedding (Wedding Party)">Wedding (Wedding Party)</option>
-                                        <option value="Wedding (Guest)">Wedding (Guest)</option>
-                                        <option value="Ceremonial">Ceremonial</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="from-label" for="service">Additional Information (optional)</label>
-                                <textarea id="inf_custom_ContactUsMessage" name="inf_custom_ContactUsMessage"
-                                    class="form-control form-textarea" rows="5"
-                                    placeholder="Please write your message here."></textarea>
-                            </div>
-
-                            <div class="text-center mb-3">
-                                <button id="recaptcha_375089833bb07c8020d0cfdf959d6709" type="submit"
-                                    class="btn btn-submit">Book My Consultation <img class="arrow"
-                                        src="assets/images/btn-submit-arrow.png" alt="">
-                                </button>
-                            </div>
-
-                            <p class="disclaimer-text text-center">
-                                By submitting this form, you agree to be contacted regarding your consultation
-                                request. We respect your privacy and will never share your information.
-                            </p>
-                        </form>
-                        <script type="text/javascript"
-                            src="https://uio475.infusionsoft.app/app/webTracking/getTrackingCode"></script>
-                        <script type="text/javascript"
-                            src="https://uio475.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.815907"></script>
-                        <script
-                            src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit"
-                            async="async" defer="defer"></script>
-                        <script type="text/javascript"
-                            src="https://uio475.infusionsoft.com/app/timezone/timezoneInputJs?xid=375089833bb07c8020d0cfdf959d6709"></script>
-                        <script type="text/javascript"
-                            src="https://uio475.infusionsoft.com/js/jquery/jquery-3.3.1.js"></script>
-                        <script type="text/javascript"
-                            src="https://uio475.infusionsoft.app/app/webform/overwriteRefererJs"></script>
+                         <iframe
+            src="https://calendly.com/hktclothiers/custom-consultation"
+            width="100%" height="900px" frameborder="0" title="Select a Date &amp; Time - Calendly""></iframe>
+                       
 
 
 
@@ -1155,6 +1208,39 @@
                     showSlide(currentSlide);
                 }
             }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.hktp-accordion-item');
+            const images = document.querySelectorAll('.wed-image');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.hktp-accordion-header');
+                header.addEventListener('click', () => {
+                    // Toggle active content
+                    accordionItems.forEach(i => {
+                        const content = i.querySelector('.hktp-accordion-content');
+                        if (i === item) {
+                            i.classList.toggle('active');
+                            content.classList.toggle('active');
+                        } else {
+                            i.classList.remove('active');
+                            content.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle active image
+                    const imageClass = item.getAttribute('data-image');
+                    images.forEach(img => {
+                        if (img.classList.contains(imageClass)) {
+                            img.classList.add('active');
+                        } else {
+                            img.classList.remove('active');
+                        }
+                    });
+                });
+            });
         });
     </script>
 </body>
