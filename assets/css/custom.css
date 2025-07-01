@@ -168,6 +168,11 @@ svg {
   width: 100%;
 }
 
+.top-bar {
+  background-color: var(--color-red-hover);
+  padding: 10px;
+}
+
 .img-hover {
   opacity: 1;
   transform: scale(1);
@@ -333,6 +338,7 @@ header.darkHeader ul.nav li a:after {
 .offer-description strong {
   font-weight: normal !important;
 }
+
 /*****/
 
 .fx-btns {
@@ -478,6 +484,76 @@ header .btn.btn-cta:hover i,
   bottom: 0;
   text-decoration: underline;
   text-underline-offset: 8px;
+}
+
+/* ==== HKT PRODUCTS ==== */
+.hktp-accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hktp-accordion-item {
+  border-bottom: 1px solid #999;
+  font-family: var(--heading-font-family);
+  transition: border-bottom 0.3s ease;
+}
+
+.hktp-accordion-item.active {
+  border-bottom: 1px solid #A42126;
+  font-family: var(--heading-font-family);
+}
+
+.hktp-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.hktp-accordion-header {
+  padding: 25px 0px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 36px;
+  color: #666;
+  font-family: var(--heading-font-family);
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.hktp-accordion-item.active .hktp-accordion-header {
+  color: #a52a2a;
+}
+
+.hktp-accordion-content {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 20px;
+  color: #000;
+  font-family: var(--text-font-family);
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  font-weight: 400;
+}
+
+.hktp-accordion-item.active .hktp-accordion-content {
+  padding: 0px 0px 25px 0px;
+  opacity: 1;
+  display: inline-table;
+}
+
+.wed-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateY(10px); /* Optional: slight upward movement for slide-in effect */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and transform */
+}
+
+.wed-image.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Reset transform when active */
 }
 
 
@@ -719,10 +795,11 @@ ul.slick-nav li:hover svg {
   justify-content: center;
   text-align: left;
 }
- 
+
 .review-title span {
   display: block;
 }
+
 .review-box .review-content p.review-text {
   margin: 30px 0px 10px;
   font-size: 18px;
