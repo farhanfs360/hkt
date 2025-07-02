@@ -176,7 +176,7 @@
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col-12">
-                    <p class="text-center text-light p-0 m-0">
+                    <p class="text-center text-dark p-0 m-0">
                         Begin your Custom journey with us, enjoy a complimentary custom shirt with your first suit
                         purchase valued up to <strong>$295.</strong>
                     </p>
@@ -328,7 +328,7 @@
                         <div class="hktp-accordion-item" data-image="wed-3">
                             <div class="hktp-accordion-header">Custom Wedding Vests</div>
                             <div class="hktp-accordion-content">
-                                Genuine Leather, premium fit, paving your way to the aisle
+                                Custom vests crafted for a crisp, lasting impression all day.
                             </div>
                         </div>
                         <div class="hktp-accordion-item" data-image="wed-4">
@@ -340,7 +340,7 @@
                         <div class="hktp-accordion-item" data-image="wed-5">
                             <div class="hktp-accordion-header">Custom Wedding Accessories</div>
                             <div class="hktp-accordion-content">
-                                Refined details that complete your look and leave a lasting impression 
+                               Custom accessories: cufflinks, ties, shoes, and belts for timeless style.
                             </div>
                         </div>
                     </div>
@@ -424,7 +424,7 @@
                             <img src="assets/images/cws-img-3.png" alt="Casual blazer jacket" class="img-fluid">
                             <div class="service-content-bottom">
                                 <h3 class="service-title">Custom Wedding Vests</h3>
-                                <p class="service-text">Genuine Leather, premium fit, paving your way to the aisle</p>
+                                <p class="service-text">Custom vests crafted for a crisp, lasting impression all day.</p>
                             </div>
                         </div>
                     </div>
@@ -450,8 +450,7 @@
                             <img src="assets/images/cws-img-5.png" alt="Casual blazer jacket" class="img-fluid">
                             <div class="service-content-bottom">
                                 <h3 class="service-title">Custom Wedding Accessories</h3>
-                                <p class="service-text">Refined details that complete your look and leave a lasting
-                                    impression </p>
+                                <p class="service-text">Custom accessories: cufflinks, ties, shoes, and belts for timeless style.</p>
                             </div>
                         </div>
                     </div>
@@ -853,7 +852,7 @@
 
     <style>
         .handpicked-hkt {
-            background-image: url('./assets/images/luxry-3.png');
+            background-image: url('./assets/images/luxry-3.jpg');
         }
 
         @media (max-width:992px) {
@@ -863,6 +862,37 @@
         }
     </style>
 
+    <!-- Main Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="appointment-heading text-center">
+                        SCHEDULE A <span>CONSULTATION</span>
+
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form -->
+    <section id="cform" class="contact-section overflow-hidden">
+        <div class="">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-md-11">
+                    <div class="contact-form-wrapper1">
+                         <iframe
+            src="https://calendly.com/hktclothiers/custom-consultation"
+            width="100%" height="900px" frameborder="0" title="Select a Date &amp; Time - Calendly""></iframe>
+                       
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- 3rd Last Map Section - for DESKTOP-->
     <section class="container my-5 desktop-map-section">
         <!-- Left Column: Address, Contact, Hours -->
@@ -1037,37 +1067,7 @@
     </section>
 
 
-    <!-- Main Appointment Section -->
-    <section class="appointment-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="appointment-heading text-center">
-                        SCHEDULE A <span>CONSULTATION</span>
 
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact form -->
-    <section id="cform" class="contact-section overflow-hidden">
-        <div class="">
-            <div class="row justify-content-center">
-                <div class="col-lg-11 col-md-11">
-                    <div class="contact-form-wrapper">
-                         <iframe
-            src="https://calendly.com/hktclothiers/custom-consultation"
-            width="100%" height="900px" frameborder="0" title="Select a Date &amp; Time - Calendly""></iframe>
-                       
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer class="hkt-footer">
@@ -1210,39 +1210,7 @@
             }
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const accordionItems = document.querySelectorAll('.hktp-accordion-item');
-            const images = document.querySelectorAll('.wed-image');
 
-            accordionItems.forEach(item => {
-                const header = item.querySelector('.hktp-accordion-header');
-                header.addEventListener('click', () => {
-                    // Toggle active content
-                    accordionItems.forEach(i => {
-                        const content = i.querySelector('.hktp-accordion-content');
-                        if (i === item) {
-                            i.classList.toggle('active');
-                            content.classList.toggle('active');
-                        } else {
-                            i.classList.remove('active');
-                            content.classList.remove('active');
-                        }
-                    });
-
-                    // Toggle active image
-                    const imageClass = item.getAttribute('data-image');
-                    images.forEach(img => {
-                        if (img.classList.contains(imageClass)) {
-                            img.classList.add('active');
-                        } else {
-                            img.classList.remove('active');
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

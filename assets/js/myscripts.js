@@ -358,3 +358,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.hktp-accordion-item');
+            const images = document.querySelectorAll('.wed-image');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.hktp-accordion-header');
+                header.addEventListener('click', () => {
+                    // Toggle active content
+                    accordionItems.forEach(i => {
+                        const content = i.querySelector('.hktp-accordion-content');
+                        if (i === item) {
+                            i.classList.toggle('active');
+                            content.classList.toggle('active');
+                        } else {
+                            i.classList.remove('active');
+                            content.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle active image
+                    const imageClass = item.getAttribute('data-image');
+                    images.forEach(img => {
+                        if (img.classList.contains(imageClass)) {
+                            img.classList.add('active');
+                        } else {
+                            img.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
